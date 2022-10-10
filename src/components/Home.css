@@ -6,6 +6,7 @@
     overflow: hidden;
 }
 
+
 /* Centered text */
 .centered {
     position: absolute;
@@ -18,14 +19,4 @@
     position: relative;
     text-align: center;
     color: white;
-}
-
-/* These need to be flipped lmao */
-.light {
-    background-color: grey;
-    color: white;
-}
-.dark {
-    background-color: white;
-    color: grey;
 }

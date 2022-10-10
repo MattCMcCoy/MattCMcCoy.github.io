@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
-import { Route, Routes } from 'react-router-dom';
-import { Layout } from './components/Layout';
+import React, { Component } from "react";
+import { Route, Routes } from "react-router-dom";
+import { Layout } from "./components/Layout";
 
 import { AboutMe } from "./components/AboutMe";
 import { FetchData } from "./components/FetchData";
@@ -8,16 +8,16 @@ import { Home } from "./components/Home";
 
 const AppRoutes = [
   {
-    index: '/',
-    element: <Home />
+    index: "/",
+    element: <Home />,
   },
   {
-    path: '/AboutMe',
-    element: <AboutMe />
+    path: "/aboutme",
+    element: <AboutMe />,
   },
   {
-    path: '/fetch-data',
-    element: <FetchData />
+    path: "/fetch-data",
+    element: <FetchData />,
   },
 ];
 
