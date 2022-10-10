@@ -10,20 +10,31 @@
 }
 
 .nav-links {
-  display: inline-block;
-  border-color: white;
   color: white;
-  }
-  
-  .nav-links:hover {
+  text-align: center;
+}
+
+.nav-links:hover {
   color: black;
-  }
+}
+
+.navbar-toggler {
+  color: rgb(70, 70, 70);
+  width: 100%;
+  border: 0px;
+  overflow: hidden;
+}
+
+.navbar-toggler:hover {
+  color: grey;
+  border: 0px;
+}
 
 .dark {
-    background-color: grey;
-    color: white;
+  background-color: grey;
+  color: white;
 }
 .light {
-    background-color: white;
-    color: white;
+  background-color: white;
+  color: white;
 }

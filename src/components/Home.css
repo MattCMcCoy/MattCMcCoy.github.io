@@ -6,7 +6,6 @@
     overflow: hidden;
 }
 
-
 /* Centered text */
 .centered {
     position: absolute;
@@ -14,6 +13,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
 /* Container holding the image and the text */
 .container {
     position: relative;

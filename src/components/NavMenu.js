@@ -5,13 +5,15 @@ import {
   Nav,
   Navbar,
   NavbarBrand,
-  NavbarToggler,
   NavItem,
   NavLink,
+  Button,
 } from "reactstrap";
 import { Link } from "react-router-dom";
 import { useCycle } from "framer-motion";
 import "./NavMenu.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from "@fortawesome/fontawesome-free-solid";
 
 const createNavItem = ({ href, text }) => (
   <NavItem>
@@ -32,14 +34,12 @@ const NavigationBar = () => {
 
   return (
     <Navbar>
-      <NavbarBrand tag={Link} className="text-white" to="/">
+      <NavbarBrand tag={Link} className="nav-links" to="/">
         Matt McCoy
       </NavbarBrand>
-      <NavbarToggler
-        onClick={toggleCollapse}
-        aria-expanded={false}
-        color="white"
-      />
+      <Button onClick={toggleCollapse} className="navbar-toggler">
+      <FontAwesomeIcon icon={faBars} color="white" />
+      </Button>
       <Collapse isOpen={collapsed}>
         <Nav navbar>{links.map(createNavItem)}</Nav>
         <ControlTheme />
@@ -47,12 +47,9 @@ const NavigationBar = () => {
     </Navbar>
   );
 };
+
 export class NavMenu extends Component {
   render() {
-    return (
-      <header>
-        <NavigationBar />
-      </header>
-    );
+    return <header>{<NavigationBar />}</header>;
   }
 }
