@@ -15,6 +15,7 @@ import { useCycle } from "framer-motion";
 import "./NavMenu.css";
 import { faMoon } from "@fortawesome/free-regular-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCloudMoon } from "@fortawesome/free-solid-svg-icons";
 
 const createNavItem = ({ href, text }) => (
   <NavItem>
@@ -48,8 +49,8 @@ function ControlTheme() {
     <ReactSwitch
       onChange={toggleStates}
       checked={checkedState}
-      uncheckedIcon={<Container className="center-switch-image">☀</Container>}
-      checkedIcon={<FontAwesomeIcon icon={faMoon}/>}
+      uncheckedIcon={<FontAwesomeIcon icon={faMoon} color="white" transform={"shrink right-3"}/>}
+      checkedIcon={<FontAwesomeIcon icon={faCloudMoon} transform={"shrink right-3"}/>}
       height={25}
       width={50}
     />
