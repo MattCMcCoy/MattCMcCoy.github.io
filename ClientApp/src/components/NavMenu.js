@@ -13,9 +13,8 @@ import {
 import { Link } from "react-router-dom";
 import { useCycle } from "framer-motion";
 import "./NavMenu.css";
-import { faMoon } from "@fortawesome/free-regular-svg-icons";
+import { faMoon, faCloudMoon } from "@fortawesome/free-regular-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCloudMoon } from "@fortawesome/free-solid-svg-icons";
 
 const createNavItem = ({ href, text }) => (
   <NavItem>
