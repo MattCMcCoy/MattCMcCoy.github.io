@@ -1,8 +1,6 @@
 import React, { Component } from "react";
 import { TypeAnimation } from "react-type-animation";
-
 import { ActionAreaCard } from "./component-parts/Card";
-
 import drone from "./Images/Drone-Video.mp4";
 import "./Home.css";
 
@@ -26,15 +24,15 @@ const cardContent = [
   },
   {
     href: "/experience",
-    image: "",
+    image: require("./Images/bluehill.jpeg"),
     title: "Personal Experience",
-    description: "Learn about my professional experiences",
+    description: "Learn about my professional experiences.",
   },
   {
     href: "/projects",
     image: "",
     title: "Projects",
-    description: "Learn about the projects I have and am working on",
+    description: "Learn about the projects I have and am working on.",
   },
 ];
 
@@ -62,7 +60,6 @@ const videoContainer = (
   </div>
 );
 
-
 // Cards need to be centered. Or at least to left a bit more.
 export class Home extends Component {
   static displayName = Home.name;
@@ -70,7 +67,11 @@ export class Home extends Component {
     return (
       <div>
         {videoContainer}
-        {cardContent.map(ActionAreaCard)}
+        <div>
+        {cardContent.map(ActionAreaCard).map((item) => (
+          <div className="child">{item}</div>
+        ))}
+        </div>
       </div>
     );
   }

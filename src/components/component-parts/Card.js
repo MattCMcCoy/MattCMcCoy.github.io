@@ -6,22 +6,26 @@ import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import { CardActionArea } from "@mui/material";
 
-export function ActionAreaCard({ href, image, title, description }) {
+
+
+export function ActionAreaCard({ href, image, title, description }) { 
+  /*
+  these need to be changed, light mode the borders disapear, may also want to reposition them here.
+  So they go from row to row instead of column.
+  */
   return (
-    <div>
-      <Card sx={{ maxWidth: 550 }} bordered>
+      <Card>
         <CardActionArea href={href}>
-          <CardMedia component="img" height="350" image={image} />
+          <CardMedia component="img" image={image} />
           <CardContent>
-            <Typography gutterBottom={false} variant="h5" component="div">
+            <Typography variant="h5" component="div">
               {title}
             </Typography>
-            <Typography variant="body2" color="text.secondary">
+            <Typography variant="body2" color="black">
               {description}
             </Typography>
           </CardContent>
         </CardActionArea>
       </Card>
-    </div>
   );
 }
