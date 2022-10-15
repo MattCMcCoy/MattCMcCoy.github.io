@@ -1,7 +1,7 @@
-import { ControlTheme } from "./component-parts/PageTheme.js";
-import React, { Component } from "react";
+import { ControlTheme, useSharedTheme } from "./component-parts/PageTheme.js";
+import React, { useState, useEffect, Component } from "react";
 import { Collapse, Nav, Navbar, NavItem, NavLink, Button } from "reactstrap";
-import { useCycle } from "framer-motion";
+import { useCycle, useUnmountEffect } from "framer-motion";
 import "./NavMenu.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/fontawesome-free-solid";
@@ -24,9 +24,9 @@ const NavigationBar = () => {
     { href: "/aboutme", text: "About Me", className: "nav-links" },
     { href: "/projects", text: "Projects", className: "nav-links" },
   ];
-
+  const {theme} = useSharedTheme();
   return (
-    <Navbar>
+    <Navbar className={theme === 'light' ? "header-light" : "header-dark"}>
       <Nav navbar>
         {createNavItem({ href: "/", text: "Matt McCoy", className: "title" })}
       </Nav>
@@ -40,7 +40,7 @@ const NavigationBar = () => {
       </Button>
       <Collapse isOpen={collapsed}>
         <Nav navbar>{links.map(createNavItem)}</Nav>
-        <ControlTheme />
+        {ControlTheme()}
       </Collapse>
     </Navbar>
   );
@@ -48,6 +48,6 @@ const NavigationBar = () => {
 
 export class NavMenu extends Component {
   render() {
-    return <header>{<NavigationBar />}</header>;
+    return  <div><NavigationBar/></div>;
   }
 }
