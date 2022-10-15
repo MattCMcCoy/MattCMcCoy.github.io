@@ -1,0 +1,28 @@
+.imageStyle {
+  height: 30vw;
+  width: 30vw;
+}
+.cardContentStyle {
+  height: 15vw;
+  width: 30vw;
+  background-color: rgb(80, 102, 128);
+}
+.card {
+    background-color: rgb(80, 102, 128);
+    border: 0px
+}
+@media only screen and (max-width: 650px) {
+    .card {
+        display: none;
+        
+    }
+}
+
+
+.darkCardContentStyle {
+  height: auto;
+  width: auto;
+  max-width: 30vw;
+  min-width: 30vw;
+  background-color: white;
+}

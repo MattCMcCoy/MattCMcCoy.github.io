@@ -1,13 +1,13 @@
 ﻿.header-light {
   margin: 0 auto;
   text-align: center;
-  background: rgb(55, 55, 200);
+  background: rgb(80, 102, 128);
 }
 
 .header-dark {
   margin: 0 auto;
   text-align: center;
-  background: rgb(20, 20, 90);
+  background: rgb(47, 69, 98);
 }
 
 .center-switch-image {
@@ -40,7 +40,7 @@
 }
 
 .navbar-toggler {
-  color: rgb(20, 20, 90);
+  color: rgb(47, 69, 98);
   width: 100%;
   border: 0px;
   overflow: hidden;
@@ -52,7 +52,7 @@
 }
 
 .dark {
-  background-color: rgb(10, 10, 50);
+  background-color: rgb(8, 27, 51);
   color: white;
 }
 .light {

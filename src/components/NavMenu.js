@@ -1,7 +1,7 @@
 import { ControlTheme, useSharedTheme } from "./component-parts/PageTheme.js";
-import React, { useState, useEffect, Component } from "react";
+import React, { Component } from "react";
 import { Collapse, Nav, Navbar, NavItem, NavLink, Button } from "reactstrap";
-import { useCycle, useUnmountEffect } from "framer-motion";
+import { useCycle } from "framer-motion";
 import "./NavMenu.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/fontawesome-free-solid";

@@ -5,7 +5,6 @@ import {useBetween} from "use-between"
 import { faMoon } from "@fortawesome/free-regular-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCloudMoon } from "@fortawesome/free-solid-svg-icons";
-import { getThemeProps } from "@mui/system";
 
 const useThemeStates = () => {
   var storedTheme = localStorage.getItem("theme");
@@ -28,12 +27,11 @@ const useThemeStates = () => {
 
   return {theme, checkedState, toggleStates}
 }
-
 export const useSharedTheme = () => useBetween(useThemeStates);
 
 export function ControlTheme() {
 
-  const {checkedState, toggleStates} = useSharedTheme();
+  const {checkedState, toggleStates} = useThemeStates();
 
   return (
     <ReactSwitch

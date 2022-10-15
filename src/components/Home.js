@@ -25,7 +25,7 @@ const cardContent = [
   {
     href: "/experience",
     image: require("./Images/bluehill.jpeg"),
-    title: "Personal Experience",
+    title: "Experience",
     description: "Learn about my professional experiences.",
   },
   {
