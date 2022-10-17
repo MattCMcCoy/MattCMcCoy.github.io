@@ -31,7 +31,7 @@ export const useSharedTheme = () => useBetween(useThemeStates);
 
 export function ControlTheme() {
 
-  const {checkedState, toggleStates} = useThemeStates();
+  const {checkedState, toggleStates} = useSharedTheme();
 
   return (
     <ReactSwitch

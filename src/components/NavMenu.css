@@ -1,13 +1,12 @@
 ﻿.header-light {
   margin: 0 auto;
   text-align: center;
-  background: rgb(80, 102, 128);
+  background: rgba(80, 102, 128, 0);
 }
 
 .header-dark {
-  margin: 0 auto;
   text-align: center;
-  background: rgb(47, 69, 98);
+  background: rgb(47, 69, 98, 0);
 }
 
 .center-switch-image {
@@ -16,11 +15,12 @@
 }
 
 .nav-links {
+  font-family: sans-serif;
   color: black;
-  text-align: center;
-  width: 100%;
-  position: relative;
+  -webkit-text-stroke-width: .7px;
+  -webkit-text-stroke-color: white;
   font-weight: bold;
+  font-size: 22px;
 }
 
 .nav-links:hover {
@@ -40,15 +40,15 @@
 }
 
 .navbar-toggler {
-  color: rgb(47, 69, 98);
-  width: 100%;
+  color: #00000000;
   border: 0px;
   overflow: hidden;
 }
 
 .navbar-toggler:hover {
-  color: grey;
+  color: #00000000;
   border: 0px;
+  background-color:#00000000
 }
 
 .dark {

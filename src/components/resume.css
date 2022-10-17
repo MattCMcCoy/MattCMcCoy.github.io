@@ -1,0 +1,19 @@
+.resume {
+    overflow: auto;
+    position: relative;
+    right: -.2%; /* This is to center it might be a better way to do this though come back. */
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  /* This will override the react-pdf page styling :) */
+  .react-pdf__Page__canvas {
+    width: 98.9vw !important;
+    height: 100% !important;
+}

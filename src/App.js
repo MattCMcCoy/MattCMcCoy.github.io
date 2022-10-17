@@ -5,6 +5,7 @@ import { Layout } from "./components/Layout";
 import { AboutMe } from "./components/AboutMe";
 import { FetchData } from "./components/FetchData";
 import { Home } from "./components/Home";
+import { Resume } from "./components/Resume";
 
 const AppRoutes = [
   {
@@ -19,6 +20,10 @@ const AppRoutes = [
     path: "/fetch-data",
     element: <FetchData />,
   },
+  {
+    path: "/resume",
+    element: <Resume />
+  }
 ];
 
 export default class App extends Component {

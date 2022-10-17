@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import { TypeAnimation } from "react-type-animation";
-import { ActionAreaCard } from "./component-parts/Card";
 import drone from "./Images/Drone-Video.mp4";
 import "./Home.css";
+import { NavMenu } from "./NavMenu";
 
 const welcomeMessage = [
   "Hey My Name Is Matt! :)",
@@ -15,29 +15,29 @@ const welcomeMessage = [
   20,
 ];
 
-const cardContent = [
-  {
-    href: "/aboutme",
-    image: require("./Images/LakeTahoeSunset.jpeg"),
-    title: "About Me",
-    description: "Learn about my hobbies/Things I like to do for fun.",
-  },
-  {
-    href: "/experience",
-    image: require("./Images/bluehill.jpeg"),
-    title: "Experience",
-    description: "Learn about my professional experiences.",
-  },
-  {
-    href: "/projects",
-    image: "",
-    title: "Projects",
-    description: "Learn about the projects I have and am working on.",
-  },
-];
+// const cardContent = [
+//   {
+//     href: "/aboutme",
+//     image: require("./Images/LakeTahoeSunset.jpeg"),
+//     title: "About Me",
+//     description: "Learn about my hobbies/Things I like to do for fun.",
+//   },
+//   {
+//     href: "/experience",
+//     image: require("./Images/bluehill.jpeg"),
+//     title: "Experience",
+//     description: "Learn about my professional experiences.",
+//   },
+//   {
+//     href: "/projects",
+//     image: "",
+//     title: "Projects",
+//     description: "Learn about the projects I have and am working on.",
+//   },
+// ];
 
 const videoContainer = (
-  <div class="container">
+  <div class="flexbox-container">
     <video
       className="header_video"
       id="dronevideo"
@@ -65,12 +65,13 @@ export class Home extends Component {
   static displayName = Home.name;
   render() {
     return (
-      <div>
+      <div className="flexbox-container">
         {videoContainer}
         <div>
-        {cardContent.map(ActionAreaCard).map((item) => (
+        {/* {cardContent.map(ActionAreaCard).map((item) => (
           <div className="child">{item}</div>
-        ))}
+        ))} */}
+        <NavMenu/>
         </div>
       </div>
     );
