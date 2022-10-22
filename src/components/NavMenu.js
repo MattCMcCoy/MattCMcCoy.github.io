@@ -6,7 +6,7 @@ import "./Styling/NavMenu.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faMinus } from "@fortawesome/fontawesome-free-solid";
 import { ReactComponent as GitHubLogo } from "./Images/github.svg";
-import {ReactComponent as LinkedInLogo } from "./Images/linkedin.svg"
+import { ReactComponent as LinkedInLogo } from "./Images/linkedin.svg";
 const createNavItem = ({ href, text, className }) => (
   <NavItem>
     <NavLink href={href} className={className}>
@@ -54,7 +54,7 @@ const NavigationBar = () => {
           href="https://linkedin.com/in/matthewcmccoy"
           target="_blank"
         >
-          <LinkedInLogo style={{ height: 30, width: 20, color:"white" }} className="svg" />
+          <LinkedInLogo style={{ height: 30, width: 20 }} className="svg" />
         </Button>
       </div>
       <Collapse isOpen={collapsed} navbar>

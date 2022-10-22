@@ -30,9 +30,13 @@
 }
 
 .svg-button {
-  background-color: rgba(0,0,0,0);
+  background-color: rgba(0, 0, 0, 0);
   border: none;
   outline: none;
+}
+.svg-button:hover {
+  background-color: rgba(0, 0, 0, 0);
+  color: black;
 }
 
 .title {
@@ -62,7 +66,7 @@
 .navbar-toggler:hover {
   color: #00000000;
   border: 0px;
-  background-color:#00000000
+  background-color: #00000000;
 }
 
 .dark {

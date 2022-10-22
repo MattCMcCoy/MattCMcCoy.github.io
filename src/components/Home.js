@@ -37,7 +37,7 @@ const welcomeMessage = [
 // ];
 
 const videoContainer = (
-  <div class="flexbox-container">
+  <div className="flexbox-container">
     <video
       className="header_video"
       id="dronevideo"
