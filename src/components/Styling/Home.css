@@ -10,7 +10,6 @@
 .flexbox-container {
   display: grid;
   flex-direction: row;
-  
 }
 
 /* Centered text */
@@ -22,7 +21,6 @@
 }
 
 /* Container holding the image and the text */
-
 
 .card-container {
   object-fit: cover;

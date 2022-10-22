@@ -1,15 +1,15 @@
-import React, { Component } from 'react'
-import { NavMenu } from './NavMenu'
+import React, { Component } from "react";
+import { NavMenu } from "./NavMenu";
 
 export class Projects extends Component {
-  static displayName = Projects.name
+  static displayName = Projects.name;
 
-  render () {
+  render() {
     return (
       <div>
-        <NavMenu/>
+        <NavMenu />
         Coming Soon.
       </div>
-    )
+    );
   }
 }

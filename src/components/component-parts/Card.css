@@ -8,16 +8,14 @@
   background-color: rgb(80, 102, 128);
 }
 .card {
-    background-color: rgb(80, 102, 128);
-    border: 0px
+  background-color: rgb(80, 102, 128);
+  border: 0px;
 }
 @media only screen and (max-width: 650px) {
-    .card {
-        display: none;
-        
-    }
+  .card {
+    display: none;
+  }
 }
-
 
 .darkCardContentStyle {
   height: auto;

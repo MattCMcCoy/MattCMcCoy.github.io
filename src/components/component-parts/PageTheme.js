@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 import { useBetween } from "use-between";
-
-import { faMoon } from "@fortawesome/free-regular-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCloudMoon } from "@fortawesome/free-solid-svg-icons";
 import { Switch } from "@mui/material";
@@ -19,7 +17,7 @@ const useThemeStates = () => {
     }
     setTheme("light");
   };
-  
+
   // Keeps state of theme on page refresh :)
   localStorage.setItem("theme", theme);
   document.body.className = theme;
@@ -36,10 +34,6 @@ export function ControlTheme() {
       name="switch"
       onChange={toggleStates}
       checked={checkedState}
-      un
-      uncheckedIcon={
-        <FontAwesomeIcon icon={faMoon} transform={"shrink right-3"} />
-      }
       checkedIcon={
         <FontAwesomeIcon icon={faCloudMoon} transform={"shrink right-3"} />
       }
