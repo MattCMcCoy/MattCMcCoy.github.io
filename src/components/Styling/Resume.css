@@ -1,0 +1,17 @@
+.container {
+    color: white;
+    width: auto;
+    max-width: 90vw;
+    margin: auto;
+  }
+  
+  /* This will override the react-pdf page styling :) */
+  /*mobile can scroll to the left here for some reason and it will produce a large blank space*/
+  .react-pdf__Page__canvas {
+    height: 100% !important;
+    max-height: 90vh;
+    width: auto !important;
+    max-width: 90vw !important;
+    margin: auto !important;
+    overflow: hidden !important;
+}

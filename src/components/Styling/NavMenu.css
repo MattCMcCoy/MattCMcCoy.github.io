@@ -1,12 +1,13 @@
 ﻿.header-light {
-  margin: 0 auto;
-  text-align: center;
-  background: rgba(80, 102, 128, 0);
+  background: rgb(135, 189, 255);
+  overflow: hidden;
 }
 
 .header-dark {
-  text-align: center;
-  background: rgb(47, 69, 98, 0);
+  background: rgb(47, 69, 98);
+  width: auto;
+  margin: auto;
+  overflow: hidden;
 }
 
 .center-switch-image {
@@ -16,15 +17,22 @@
 
 .nav-links {
   font-family: sans-serif;
-  color: black;
-  -webkit-text-stroke-width: .7px;
-  -webkit-text-stroke-color: white;
+  color: rgb(255, 255, 255);
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgb(0, 0, 0);
   font-weight: bold;
   font-size: 22px;
+  overflow: hidden;
 }
 
 .nav-links:hover {
-  color: white;
+  color: rgb(0, 0, 0);
+}
+
+.svg-button {
+  background-color: rgba(0,0,0,0);
+  border: none;
+  outline: none;
 }
 
 .title {
@@ -39,6 +47,12 @@
   color: white;
 }
 
+.nav {
+  width: 100vw;
+  overflow: hidden;
+}
+
+/* Cant see Nav Menu button on home page */
 .navbar-toggler {
   color: #00000000;
   border: 0px;
@@ -54,8 +68,10 @@
 .dark {
   background-color: rgb(8, 27, 51);
   color: white;
+  overflow: hidden;
 }
 .light {
   background-color: rgb(225, 225, 225);
   color: white;
+  overflow: hidden;
 }

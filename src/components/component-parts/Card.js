@@ -10,10 +10,6 @@ import {
 import "./Card.css"
 
 export function ActionAreaCard({ href, image, title, description }) {
-
-  // theres a wierd bug here where if it 
-  //gets to a certain size it will go vertically but 
-  //then making it smaller makes it go back to the grid 😕
   return (
       <Card>
         <CardActionArea href={href}>

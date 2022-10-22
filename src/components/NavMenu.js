@@ -2,11 +2,11 @@ import { ControlTheme, useSharedTheme } from "./component-parts/PageTheme.js";
 import React, { Component } from "react";
 import { Collapse, Nav, Navbar, NavItem, NavLink, Button } from "reactstrap";
 import { useCycle } from "framer-motion";
-import "./NavMenu.css";
+import "./Styling/NavMenu.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faMinus } from "@fortawesome/fontawesome-free-solid";
-
-
+import { ReactComponent as GitHubLogo } from "./Images/github.svg";
+import {ReactComponent as LinkedInLogo } from "./Images/linkedin.svg"
 const createNavItem = ({ href, text, className }) => (
   <NavItem>
     <NavLink href={href} className={className}>
@@ -28,20 +28,37 @@ const NavigationBar = () => {
   ];
   const { checkedState } = useSharedTheme();
   return (
-    <Navbar
-      className={checkedState ? "header-dark" : "header-light"}
-    >
-      <Button
-        onClick={toggleCollapse}
-        className="navbar-toggler"
-        onMouseOver={switchColor}
-        onMouseOut={switchColor}
-      >
-        <FontAwesomeIcon icon={collapsed ? faMinus: faBars} color={hamburgerColor} />
-      </Button>
-      {ControlTheme()}
+    <Navbar className={checkedState ? "header-dark" : "header-light"}>
+      <div>
+        <Button
+          onClick={toggleCollapse}
+          className="navbar-toggler"
+          onMouseOver={switchColor}
+          onMouseOut={switchColor}
+        >
+          <FontAwesomeIcon
+            icon={collapsed ? faMinus : faBars}
+            color={hamburgerColor}
+          />
+        </Button>
+        {ControlTheme()}
+        <Button
+          className="svg-button"
+          href="https://github.com/MattCMcCoy"
+          target="_blank"
+        >
+          <GitHubLogo style={{ height: 30, width: 20 }} className="svg" />
+        </Button>
+        <Button
+          className="svg-button"
+          href="https://linkedin.com/in/matthewcmccoy"
+          target="_blank"
+        >
+          <LinkedInLogo style={{ height: 30, width: 20, color:"white" }} className="svg" />
+        </Button>
+      </div>
       <Collapse isOpen={collapsed} navbar>
-        <Nav>{links.map(createNavItem)}</Nav>
+        <Nav navbar>{links.map(createNavItem)}</Nav>
       </Collapse>
     </Navbar>
   );
@@ -49,10 +66,6 @@ const NavigationBar = () => {
 
 export class NavMenu extends Component {
   render() {
-    return (
-      <div>
-        <NavigationBar />
-      </div>
-    );
+    return <NavigationBar />;
   }
 }
