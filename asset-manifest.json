@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.b51a158e.css",
+    "main.js": "/static/js/main.39e3c4fd.js",
+    "static/media/Drone-Video.mp4": "/static/media/Drone-Video.50d078992fc5a7153b32.mp4",
+    "pdf.worker.js": "/e7e915313973ba1d49f9bb2a1998626e.js",
+    "static/media/github.svg": "/static/media/github.64a993f66a8b88f9aa27874fedc98a3a.svg",
+    "static/media/linkedin.svg": "/static/media/linkedin.d299b8003dcad48681cc8567c4e8833d.svg",
+    "index.html": "/index.html",
+    "main.b51a158e.css.map": "/static/css/main.b51a158e.css.map",
+    "main.39e3c4fd.js.map": "/static/js/main.39e3c4fd.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b51a158e.css",
+    "static/js/main.39e3c4fd.js"
+  ]
+}
