@@ -7,7 +7,7 @@ import { useSharedTheme } from "./component-parts/PageTheme.js";
 function ChooseResume() {
   const { checkedState } = useSharedTheme();
   return (
-    <div>
+    <div className="wrapper">
       <NavMenu />
       <Document file={checkedState ? "/resume-dark.pdf" : "/resume.pdf"}>
         <Page pageNumber={1}></Page>

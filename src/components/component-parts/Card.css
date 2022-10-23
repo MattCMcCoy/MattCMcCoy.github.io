@@ -1,10 +1,10 @@
 .imageStyle {
   height: 30vw;
-  width: 30vw;
+  width: 25vw;
 }
 .cardContentStyle {
   height: 15vw;
-  width: 30vw;
+  width: 25vw;
   background-color: rgb(80, 102, 128);
 }
 .card {
@@ -17,10 +17,19 @@
   }
 }
 
+.dark-card {
+  background-color: rgb(47, 69, 98);
+  border: 0px;
+}
+@media only screen and (max-width: 650px) {
+  .dark-card {
+    display: none;
+  }
+}
+
 .darkCardContentStyle {
-  height: auto;
-  width: auto;
-  max-width: 30vw;
-  min-width: 30vw;
-  background-color: white;
+  height: 15vw;
+  width: 25vw;
+  background-color: rgb(47, 69, 98);
+  border: 0px;
 }

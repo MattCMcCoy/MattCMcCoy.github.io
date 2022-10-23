@@ -1,0 +1,14 @@
+.card-container {
+  object-fit: cover;
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  position: absolute;
+  z-index: 2;
+}
+
+.flexbox-container {
+  display: grid;
+  flex-direction: row;
+}

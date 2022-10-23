@@ -1,6 +1,8 @@
 ﻿.header-light {
   background: rgb(135, 189, 255);
   overflow: hidden;
+  z-index: 1;
+  width: 100vw;
 }
 
 .header-dark {
@@ -8,6 +10,9 @@
   width: auto;
   margin: auto;
   overflow: hidden;
+  z-index: 1;
+  width: 100vw;
+  flex: 1;
 }
 
 .center-switch-image {
@@ -28,7 +33,10 @@
 .nav-links:hover {
   color: rgb(0, 0, 0);
 }
-
+.navcollapse {
+  position: absolute;
+  width: 100%;
+}
 .svg-button {
   background-color: rgba(0, 0, 0, 0);
   border: none;
