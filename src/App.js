@@ -10,24 +10,24 @@ import { Projects } from "./components/Projects";
 
 const AppRoutes = [
   {
+    index: "/",
+    element: <Home />,
+  },
+  {
     path: "/aboutme",
-    component: <AboutMe />,
+    element: <AboutMe />,
   },
   {
     path: "/fetch-data",
-    component: <FetchData />,
+    element: <FetchData />,
   },
   {
     path: "/resume",
-    component: <Resume />,
+    element: <Resume />,
   },
   {
     path: "/projects",
-    component: <Projects />,
-  },
-  {
-    index: "/",
-    component: <Home />,
+    element: <Projects />,
   },
 ];
 
@@ -39,8 +39,8 @@ export default class App extends Component {
       <Layout>
         <Routes>
           {AppRoutes.map((route, index) => {
-            const { component, ...rest } = route;
-            return <Route key={index} {...rest} element={component} />;
+            const { element, ...rest } = route;
+            return <Route key={index} {...rest} element={element} />;
           })}
         </Routes>
       </Layout>
