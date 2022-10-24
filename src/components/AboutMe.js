@@ -1,15 +1,10 @@
-import React, { Component } from 'react'
-import { NavMenu } from './NavMenu'
+import React, { Component } from "react";
 
+export const AboutMeHref = "#/aboutme";
 export class AboutMe extends Component {
-  static displayName = AboutMe.name
+  static displayName = AboutMe.name;
 
-  render () {
-    return (
-      <div>
-        <NavMenu/>
-        Coming Soon.
-      </div>
-    )
+  render() {
+    return <div>Coming Soon.</div>;
   }
 }

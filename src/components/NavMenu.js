@@ -1,19 +1,17 @@
 import { ControlTheme, useSharedTheme } from "./component-parts/PageTheme.js";
 import React, { Component } from "react";
 import { Collapse, Nav, Navbar, NavItem, NavLink, Button } from "reactstrap";
+import { Link } from "react-router-dom";
 import { useCycle } from "framer-motion";
+import { AboutMeHref } from "./AboutMe.js";
+import { ResumeHref } from "./Resume.js";
+import { ProjectsHref } from "./Projects.js";
+import { HomeHref } from "./Home.js";
 import "./Styling/NavMenu.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faMinus } from "@fortawesome/fontawesome-free-solid";
 import { ReactComponent as GitHubLogo } from "./Images/github.svg";
 import { ReactComponent as LinkedInLogo } from "./Images/linkedin.svg";
-const createNavItem = ({ href, text, className }) => (
-  <NavItem>
-    <NavLink href={href} className={className}>
-      {text}
-    </NavLink>
-  </NavItem>
-);
 
 // Should probably how to figure out how to make this look nice in light mode.
 const NavigationBar = () => {
@@ -21,10 +19,10 @@ const NavigationBar = () => {
   const [hamburgerColor, switchColor] = useCycle("black", "white");
 
   const links = [
-    { href: "/", text: "Home", className: "nav-links" },
-    { href: "/aboutme", text: "About Me", className: "nav-links" },
-    { href: "/projects", text: "Projects", className: "nav-links" },
-    { href: "/resume", text: "Resume", className: "nav-links" },
+    { href: HomeHref, text: "Home", className: "nav-links" },
+    { href: AboutMeHref, text: "About Me", className: "nav-links" },
+    { href: ProjectsHref, text: "Projects", className: "nav-links" },
+    { href: ResumeHref, text: "Resume", className: "nav-links" },
   ];
   const { checkedState } = useSharedTheme();
   return (
@@ -58,7 +56,21 @@ const NavigationBar = () => {
         </Button>
       </div>
       <Collapse isOpen={collapsed} navbar>
-        <Nav navbar>{links.map(createNavItem)}</Nav>
+        <Nav navbar>
+          {links.map((link) => (
+            <NavItem>
+              <NavLink
+                as={Link}
+                href={link.href}
+                t
+                className={link.className}
+                onClick={toggleCollapse}
+              >
+                {link.text}
+              </NavLink>
+            </NavItem>
+          ))}
+        </Nav>
       </Collapse>
     </Navbar>
   );

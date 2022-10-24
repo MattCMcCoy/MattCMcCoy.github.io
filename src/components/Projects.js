@@ -1,15 +1,10 @@
 import React, { Component } from "react";
-import { NavMenu } from "./NavMenu";
 
+export const ProjectsHref = "#/projects";
 export class Projects extends Component {
   static displayName = Projects.name;
 
   render() {
-    return (
-      <div>
-        <NavMenu />
-        Coming Soon.
-      </div>
-    );
+    return <div>Coming Soon.</div>;
   }
 }
