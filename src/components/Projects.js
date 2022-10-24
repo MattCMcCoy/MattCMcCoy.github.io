@@ -57,6 +57,7 @@ const cardContent = [
   },
 ];
 
+export const ProjectsHref = "#/projects";
 export class Projects extends Component {
   static displayName = Projects.name;
 

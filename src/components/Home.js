@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import { TypeAnimation } from "react-type-animation";
 import drone from "./Images/Drone-Video.mp4";
 import "./Styling/Home.css";
-import { NavMenu } from "./NavMenu";
 
 const welcomeMessage = [
   "Hey My Name Is Matt! :)",
@@ -14,6 +13,8 @@ const welcomeMessage = [
   "",
   20,
 ];
+
+export const HomeHref = "/";
 
 // const cardContent = [
 //   {
@@ -68,10 +69,9 @@ export class Home extends Component {
       <div className="flexbox-container">
         {videoContainer}
         <div>
-        {/* {cardContent.map(ActionAreaCard).map((item) => (
+          {/* {cardContent.map(ActionAreaCard).map((item) => (
           <div className="child">{item}</div>
         ))} */}
-        <NavMenu/>
         </div>
       </div>
     );

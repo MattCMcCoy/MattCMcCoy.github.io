@@ -1,8 +1,7 @@
 ﻿.header-light {
   background: rgb(135, 189, 255);
   overflow: hidden;
-  z-index: 1;
-  width: 100vw;
+  z-index: 2;
 }
 
 .header-dark {
@@ -10,9 +9,7 @@
   width: auto;
   margin: auto;
   overflow: hidden;
-  z-index: 1;
-  width: 100vw;
-  flex: 1;
+  z-index: 2;
 }
 
 .center-switch-image {
@@ -62,6 +59,7 @@
 .nav {
   width: 100vw;
   overflow: hidden;
+  z-index: 0;
 }
 
 /* Cant see Nav Menu button on home page */
@@ -69,12 +67,14 @@
   color: #00000000;
   border: 0px;
   overflow: hidden;
+  z-index: 0;
 }
 
 .navbar-toggler:hover {
   color: #00000000;
   border: 0px;
   background-color: #00000000;
+  z-index: 0;
 }
 
 .dark {

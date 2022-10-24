@@ -1,18 +1,16 @@
 import React, { Component } from "react";
 import { Document, Page } from "react-pdf/dist/esm/entry.webpack";
-import { NavMenu } from "./NavMenu.js";
 import "./Styling/Resume.css";
 import { useSharedTheme } from "./component-parts/PageTheme.js";
+
+export const ResumeHref = "#/resume";
 
 function ChooseResume() {
   const { checkedState } = useSharedTheme();
   return (
-    <div className="wrapper">
-      <NavMenu />
-      <Document file={checkedState ? "/resume-dark.pdf" : "/resume.pdf"}>
-        <Page pageNumber={1}></Page>
-      </Document>
-    </div>
+    <Document file={checkedState ? "/resume-dark.pdf" : "/resume.pdf"}>
+      <Page pageNumber={1}></Page>
+    </Document>
   );
 }
 
