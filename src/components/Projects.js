@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { NavMenu } from "./NavMenu";
 import { ActionAreaCard } from "./component-parts/Card";
 import "./Styling/Projects.css";
 import { Grid } from "@mui/material";
@@ -63,16 +62,11 @@ export class Projects extends Component {
 
   render() {
     return (
-      <div>
-        <NavMenu />
-        <div>
-          <Grid container>
-            {cardContent.map((card) => (
-              <Grid>{ActionAreaCard(card)}</Grid>
-            ))}
-          </Grid>
-        </div>
-      </div>
+      <Grid container>
+        {cardContent.map((card) => (
+          <Grid>{ActionAreaCard(card)}</Grid>
+        ))}
+      </Grid>
     );
   }
 }

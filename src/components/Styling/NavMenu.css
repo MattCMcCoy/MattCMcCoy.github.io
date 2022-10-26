@@ -1,15 +1,17 @@
 ﻿.header-light {
+  position: fixed;
+  top: 0;
   background: rgb(135, 189, 255);
-  overflow: hidden;
-  z-index: 2;
+  z-index: 99;
+  width: 100vw;
 }
 
 .header-dark {
+  position: fixed;
+  top: 0;
   background: rgb(47, 69, 98);
-  width: auto;
-  margin: auto;
-  overflow: hidden;
-  z-index: 2;
+  z-index: 99;
+  width: 100vw;
 }
 
 .center-switch-image {
@@ -24,7 +26,6 @@
   -webkit-text-stroke-color: rgb(0, 0, 0);
   font-weight: bold;
   font-size: 22px;
-  overflow: hidden;
 }
 
 .nav-links:hover {

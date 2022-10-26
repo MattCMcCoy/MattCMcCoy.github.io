@@ -18,6 +18,10 @@ export class Resume extends Component {
   static displayName = Resume.name;
 
   render() {
-    return <ChooseResume />;
+    return (
+      <div className="container">
+        <ChooseResume />
+      </div>
+    );
   }
 }

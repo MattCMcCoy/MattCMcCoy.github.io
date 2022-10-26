@@ -16,27 +16,6 @@ const welcomeMessage = [
 
 export const HomeHref = "/";
 
-// const cardContent = [
-//   {
-//     href: "/aboutme",
-//     image: require("./Images/LakeTahoeSunset.jpeg"),
-//     title: "About Me",
-//     description: "Learn about my hobbies/Things I like to do for fun.",
-//   },
-//   {
-//     href: "/experience",
-//     image: require("./Images/bluehill.jpeg"),
-//     title: "Experience",
-//     description: "Learn about my professional experiences.",
-//   },
-//   {
-//     href: "/projects",
-//     image: "",
-//     title: "Projects",
-//     description: "Learn about the projects I have and am working on.",
-//   },
-// ];
-
 const videoContainer = (
   <div className="flexbox-container">
     <video
@@ -61,19 +40,9 @@ const videoContainer = (
   </div>
 );
 
-// Cards need to be centered. Or at least to left a bit more.
 export class Home extends Component {
   static displayName = Home.name;
   render() {
-    return (
-      <div className="flexbox-container">
-        {videoContainer}
-        <div>
-          {/* {cardContent.map(ActionAreaCard).map((item) => (
-          <div className="child">{item}</div>
-        ))} */}
-        </div>
-      </div>
-    );
+    return videoContainer;
   }
 }

@@ -56,7 +56,7 @@ const NavigationBar = () => {
         </Button>
       </div>
       <Collapse isOpen={collapsed} navbar>
-        <Nav navbar>
+        <Nav fill navbar>
           {links.map((link) => (
             <NavItem>
               <NavLink
