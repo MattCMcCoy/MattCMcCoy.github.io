@@ -63,7 +63,7 @@ const NavigationBar = () => {
                 as={Link}
                 href={link.href}
                 t
-                className={link.className}
+                className={checkedState ? "nav-links-dark" : "nav-links"}
                 onClick={toggleCollapse}
               >
                 {link.text}

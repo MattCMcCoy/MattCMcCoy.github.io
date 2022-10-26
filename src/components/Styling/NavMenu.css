@@ -19,16 +19,27 @@
   justify-content: center;
 }
 
-.nav-links {
-  font-family: sans-serif;
+.nav-links-dark {
+  font-family: "Arial Rounded MT Bold";
   color: rgb(255, 255, 255);
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: rgb(0, 0, 0);
-  font-weight: bold;
-  font-size: 22px;
+  font-size: 25px;
+}
+
+.nav-links {
+  font-family: "Arial Rounded MT Bold";
+  color: rgb(0, 0, 0);
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgb(255, 255, 255);
+  font-size: 25px;
 }
 
 .nav-links:hover {
+  color: rgb(255, 255, 255);
+}
+
+.nav-links-dark:hover {
   color: rgb(0, 0, 0);
 }
 .navcollapse {

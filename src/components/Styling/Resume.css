@@ -10,9 +10,7 @@
 }
 
 .container {
-  overflow-y: auto;
   display: inline !important;
-  z-index: 1;
 }
 
 html,
