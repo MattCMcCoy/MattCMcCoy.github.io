@@ -1,14 +1,14 @@
 .imageStyle {
   height: 30vw;
-  width: 50vw;
+  width: 45vw;
 }
 .cardContentStyle {
-  height: 15vw;
-  width: 50vw;
-  background-color: rgb(80, 102, 128);
+  height: 20vw;
+  width: 45vw;
+  background-color: rgb(118, 150, 189);
 }
 .card {
-  background-color: rgb(80, 102, 128);
+  background-color: rgb(118, 150, 189);
   border: 0px;
 }
 @media only screen and (max-width: 650px) {
@@ -18,7 +18,7 @@
 }
 
 .dark-card {
-  background-color: rgb(47, 69, 98);
+  background-color: rgb(80, 102, 128);
   border: 0px;
 }
 @media only screen and (max-width: 650px) {
@@ -28,8 +28,8 @@
 }
 
 .darkCardContentStyle {
-  height: 15vw;
-  width: 25vw;
-  background-color: rgb(47, 69, 98);
+  height: 20vw;
+  width: 45vw;
+  background-color: rgb(80, 102, 128);
   border: 0px;
 }

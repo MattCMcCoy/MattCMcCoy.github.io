@@ -62,7 +62,7 @@ export class Projects extends Component {
 
   render() {
     return (
-      <Grid container>
+      <Grid container className="card-container">
         {cardContent.map((card) => (
           <Grid>{ActionAreaCard(card)}</Grid>
         ))}

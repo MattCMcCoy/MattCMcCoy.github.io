@@ -14,7 +14,7 @@ import { ReactComponent as GitHubLogo } from "./Images/github.svg";
 import { ReactComponent as LinkedInLogo } from "./Images/linkedin.svg";
 
 // Should probably how to figure out how to make this look nice in light mode.
-const NavigationBar = () => {
+function NavigationBar() {
   const [collapsed, toggleCollapse] = useCycle(false, true);
   const [hamburgerColor, switchColor] = useCycle("black", "white");
 
@@ -26,7 +26,10 @@ const NavigationBar = () => {
   ];
   const { checkedState } = useSharedTheme();
   return (
-    <Navbar className={checkedState ? "header-dark" : "header-light"}>
+    <Navbar
+      className={checkedState ? "header-dark" : "header-light"}
+      onBlur={collapsed ? toggleCollapse : null}
+    >
       <div>
         <Button
           onClick={toggleCollapse}
@@ -65,6 +68,7 @@ const NavigationBar = () => {
                 t
                 className={checkedState ? "nav-links-dark" : "nav-links"}
                 onClick={toggleCollapse}
+                onFocus={!collapsed ? toggleCollapse : null}
               >
                 {link.text}
               </NavLink>
@@ -74,7 +78,7 @@ const NavigationBar = () => {
       </Collapse>
     </Navbar>
   );
-};
+}
 
 export class NavMenu extends Component {
   render() {
