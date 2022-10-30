@@ -7,7 +7,7 @@ import { AboutMeHref } from "./AboutMe.js";
 import { ResumeHref } from "./Resume.js";
 import { ProjectsHref } from "./Projects.js";
 import { HomeHref } from "./Home.js";
-import "./Styling/NavMenu.css";
+import "./styling/NavMenu.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faMinus } from "@fortawesome/fontawesome-free-solid";
 import { ReactComponent as GitHubLogo } from "./Images/github.svg";

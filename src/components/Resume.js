@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Document, Page } from "react-pdf/dist/esm/entry.webpack";
-import "./Styling/Resume.css";
+import "./styling/Resume.css";
 import { useSharedTheme } from "./component-parts/PageTheme.js";
 
 export const ResumeHref = "#/resume";
