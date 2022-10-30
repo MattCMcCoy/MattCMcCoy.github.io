@@ -18,42 +18,6 @@ const cardContent = [
     description:
       "A project made in my Object Oriented Design Course in which practices OOP and good coding practices.",
   },
-  {
-    href: "/comingsoon",
-    image: "",
-    title: "ComingSoon",
-    description: "...",
-  },
-  {
-    href: "/comingsoon",
-    image: "",
-    title: "ComingSoon",
-    description: "...",
-  },
-  {
-    href: "/comingsoon",
-    image: "",
-    title: "ComingSoon",
-    description: "...",
-  },
-  {
-    href: "/comingsoon",
-    image: "",
-    title: "ComingSoon",
-    description: "...",
-  },
-  {
-    href: "/comingsoon",
-    image: "",
-    title: "ComingSoon",
-    description: "...",
-  },
-  {
-    href: "/comingsoon",
-    image: "",
-    title: "ComingSoon",
-    description: "...",
-  },
 ];
 
 export const ProjectsHref = "#/projects";

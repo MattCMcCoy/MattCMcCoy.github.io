@@ -26,10 +26,7 @@ function NavigationBar() {
   ];
   const { checkedState } = useSharedTheme();
   return (
-    <Navbar
-      className={checkedState ? "header-dark" : "header-light"}
-      onBlur={collapsed ? toggleCollapse : null}
-    >
+    <Navbar className={checkedState ? "header-dark" : "header-light"}>
       <div>
         <Button
           onClick={toggleCollapse}
@@ -68,7 +65,6 @@ function NavigationBar() {
                 t
                 className={checkedState ? "nav-links-dark" : "nav-links"}
                 onClick={toggleCollapse}
-                onFocus={!collapsed ? toggleCollapse : null}
               >
                 {link.text}
               </NavLink>

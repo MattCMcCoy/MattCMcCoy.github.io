@@ -19,7 +19,7 @@ function ProduceCard({ href, image, title, description }) {
     : "cardContentStyle";
 
   return (
-    <Card>
+    <Card className="cardStyle">
       <CardActionArea href={href}>
         <CardMedia image={image} className="imageStyle" />
         <CardContent className={cardContentStyle}>
