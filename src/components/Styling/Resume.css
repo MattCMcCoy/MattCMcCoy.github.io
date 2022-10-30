@@ -5,6 +5,16 @@
   width: auto !important;
   max-width: 90vw !important;
   margin: auto !important;
-  overflow: hidden !important;
   z-index: 1 !important;
+  margin-top: 5vh !important;
+}
+
+.container {
+  display: inline !important;
+}
+
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
 }

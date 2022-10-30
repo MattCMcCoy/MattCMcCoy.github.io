@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Document, Page } from "react-pdf/dist/esm/entry.webpack";
-import "./Styling/Resume.css";
+import "./styling/Resume.css";
 import { useSharedTheme } from "./component-parts/PageTheme.js";
 
 export const ResumeHref = "#/resume";
@@ -18,6 +18,10 @@ export class Resume extends Component {
   static displayName = Resume.name;
 
   render() {
-    return <ChooseResume />;
+    return (
+      <div className="container">
+        <ChooseResume />
+      </div>
+    );
   }
 }

@@ -7,14 +7,14 @@ import { AboutMeHref } from "./AboutMe.js";
 import { ResumeHref } from "./Resume.js";
 import { ProjectsHref } from "./Projects.js";
 import { HomeHref } from "./Home.js";
-import "./Styling/NavMenu.css";
+import "./styling/NavMenu.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faMinus } from "@fortawesome/fontawesome-free-solid";
 import { ReactComponent as GitHubLogo } from "./Images/github.svg";
 import { ReactComponent as LinkedInLogo } from "./Images/linkedin.svg";
 
 // Should probably how to figure out how to make this look nice in light mode.
-const NavigationBar = () => {
+function NavigationBar() {
   const [collapsed, toggleCollapse] = useCycle(false, true);
   const [hamburgerColor, switchColor] = useCycle("black", "white");
 
@@ -56,14 +56,14 @@ const NavigationBar = () => {
         </Button>
       </div>
       <Collapse isOpen={collapsed} navbar>
-        <Nav navbar>
+        <Nav fill navbar>
           {links.map((link) => (
             <NavItem>
               <NavLink
                 as={Link}
                 href={link.href}
                 t
-                className={link.className}
+                className={checkedState ? "nav-links-dark" : "nav-links"}
                 onClick={toggleCollapse}
               >
                 {link.text}
@@ -74,7 +74,7 @@ const NavigationBar = () => {
       </Collapse>
     </Navbar>
   );
-};
+}
 
 export class NavMenu extends Component {
   render() {

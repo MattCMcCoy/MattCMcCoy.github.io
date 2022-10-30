@@ -3,7 +3,6 @@ import { Route, Routes } from "react-router-dom";
 import { Layout } from "./components/Layout";
 
 import { AboutMe } from "./components/AboutMe";
-import { FetchData } from "./components/FetchData";
 import { Home } from "./components/Home";
 import { Resume } from "./components/Resume";
 import { Projects } from "./components/Projects";
@@ -16,10 +15,6 @@ const AppRoutes = [
   {
     path: "/aboutme",
     element: <AboutMe />,
-  },
-  {
-    path: "/fetch-data",
-    element: <FetchData />,
   },
   {
     path: "/resume",
