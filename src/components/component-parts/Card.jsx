@@ -1,7 +1,5 @@
-import { React } from "react";
-
+import React from "react";
 import { useSharedTheme } from "./PageTheme";
-
 import {
   CardActionArea,
   Typography,
@@ -10,6 +8,7 @@ import {
   Card,
 } from "@mui/material";
 import "./Card.css";
+
 function ProduceCard({ href, image, title, description }) {
   const { checkedState } = useSharedTheme();
 
@@ -23,7 +22,7 @@ function ProduceCard({ href, image, title, description }) {
       <CardActionArea href={href}>
         <CardMedia image={image} className="imageStyle" />
         <CardContent className={cardContentStyle}>
-          <Typography component="div" fontWeight={"bold"}>
+          <Typography component="div" fontWeight="bold">
             {title}
           </Typography>
           <Typography component="div" variant="caption" className={cardStyle}>

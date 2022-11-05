@@ -16,6 +16,7 @@ const welcomeMessage = [
 
 export const HomeHref = "/";
 
+// Video autoplay doesnt work on lowpower mode ios :)
 const videoContainer = (
   <div className="flexbox-container">
     <video
@@ -23,11 +24,10 @@ const videoContainer = (
       id="dronevideo"
       src={drone}
       type="video/mp4"
-      loop
-      muted
-      autoPlay
-      playsInline
-      controls={false}
+      muted={true}
+      autoPlay={true}
+      playsInline={true}
+      loop={true}
     />
     <div class="centered">
       <TypeAnimation
