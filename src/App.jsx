@@ -4,7 +4,6 @@ import { Layout } from "./components/Layout";
 
 import { AboutMe } from "./components/AboutMe";
 import { Home } from "./components/Home";
-import { Resume } from "./components/Resume";
 import { Projects } from "./components/Projects";
 
 const AppRoutes = [
@@ -15,10 +14,6 @@ const AppRoutes = [
   {
     path: "/aboutme",
     element: <AboutMe />,
-  },
-  {
-    path: "/resume",
-    element: <Resume />,
   },
   {
     path: "/projects",
