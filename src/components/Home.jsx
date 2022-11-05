@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { TypeAnimation } from "react-type-animation";
-import drone from "./Images/Drone-Video.mp4";
-import "./styling/Home.css";
+import drone from "../images/Drone-Video.mp4";
+import "../style/Home.css";
 
 const welcomeMessage = [
   "Hey My Name Is Matt! :)",
@@ -13,8 +13,6 @@ const welcomeMessage = [
   "",
   20,
 ];
-
-export const HomeHref = "/";
 
 // Video autoplay doesnt work on lowpower mode ios :)
 const videoContainer = (

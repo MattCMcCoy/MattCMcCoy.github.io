@@ -7,25 +7,27 @@ import {
   CardContent,
   Card,
 } from "@mui/material";
-import "./Card.css";
+
+import "../../style/Card.css";
 
 function ProduceCard({ href, image, title, description }) {
   const { checkedState } = useSharedTheme();
-
-  const cardStyle = checkedState ? "dark-card" : "card";
-  const cardContentStyle = checkedState
-    ? "darkCardContentStyle"
-    : "cardContentStyle";
 
   return (
     <Card className="cardStyle">
       <CardActionArea href={href}>
         <CardMedia image={image} className="imageStyle" />
-        <CardContent className={cardContentStyle}>
+        <CardContent
+          className={checkedState ? "darkCardContentStyle" : "cardContentStyle"}
+        >
           <Typography component="div" fontWeight="bold">
             {title}
           </Typography>
-          <Typography component="div" variant="caption" className={cardStyle}>
+          <Typography
+            component="div"
+            variant="caption"
+            className={checkedState ? "dark-card" : "card"}
+          >
             {description}
           </Typography>
         </CardContent>

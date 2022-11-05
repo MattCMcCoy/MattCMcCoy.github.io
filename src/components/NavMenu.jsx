@@ -1,16 +1,15 @@
-import { ControlTheme, useSharedTheme } from "./component-parts/PageTheme";
 import React, { Component } from "react";
 import { Collapse, Nav, Navbar, NavItem, NavLink, Button } from "reactstrap";
 import { Link } from "react-router-dom";
-import "./styling/NavMenu.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faMinus } from "@fortawesome/fontawesome-free-solid";
-import { ReactComponent as GitHubLogo } from "./Images/github.svg";
-import { ReactComponent as LinkedInLogo } from "./Images/linkedin.svg";
 import { useCycle } from "framer-motion";
-import { ReactComponent as Home } from "./Images/house.svg";
+import { ControlTheme, useSharedTheme } from "./component-parts/PageTheme";
+import { ReactComponent as GitHubLogo } from "../images/github.svg";
+import { ReactComponent as LinkedInLogo } from "../images/linkedin.svg";
+import { ReactComponent as Home } from "../images/house.svg";
+import "../style/NavMenu.css";
 
-// Should probably how to figure out how to make this look nice in light mode.
 function NavigationBar() {
   const [collapsed, toggleCollapse] = useCycle(false, true);
   const [hamburgerColor, switchColor] = useCycle("black", "white");

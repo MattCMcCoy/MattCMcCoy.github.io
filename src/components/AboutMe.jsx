@@ -1,7 +1,6 @@
 import React, { Component } from "react";
-import "./styling/AboutMe.css";
+import "../style/AboutMe.css";
 
-export const AboutMeHref = "#/aboutme";
 export class AboutMe extends Component {
   static displayName = AboutMe.name;
 
