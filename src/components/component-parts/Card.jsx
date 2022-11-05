@@ -15,7 +15,7 @@ function ProduceCard({ href, image, title, description }) {
 
   return (
     <Card className="cardStyle">
-      <CardActionArea href={href}>
+      <CardActionArea href={href} target="_blank">
         <CardMedia image={image} className="imageStyle" />
         <CardContent
           className={checkedState ? "darkCardContentStyle" : "cardContentStyle"}
