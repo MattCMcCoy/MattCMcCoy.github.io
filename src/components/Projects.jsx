@@ -50,11 +50,14 @@ export class Projects extends Component {
 
   render() {
     return (
-      <Grid container className="card-container">
-        {cardContent.map((card) => (
-          <Grid>{ActionAreaCard(card)}</Grid>
-        ))}
-      </Grid>
+      <div className="project-container">
+        <Grid container className="card-container">
+          {cardContent.map((card) => (
+            <Grid>{ActionAreaCard(card)}</Grid>
+          ))}
+        </Grid>
+        {"Note: Clicking these cards will take you to the GitHub Repo."}
+      </div>
     );
   }
 }

@@ -33,6 +33,7 @@ const videoContainer = (
         speed={10}
         wrapper="h2"
         repeat={Infinity}
+        style={{ fontSize: "15px" }}
       />
     </div>
   </div>
