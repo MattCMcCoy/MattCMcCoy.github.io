@@ -1,0 +1,88 @@
+﻿.header-light,
+.header-dark {
+  position: absolute;
+  top: 0;
+  z-index: 2;
+  width: 100vw;
+}
+
+.header-light {
+  background: rgb(135, 189, 255);
+}
+
+.header-dark {
+  background: rgb(47, 69, 98);
+}
+
+.center-switch-image {
+  display: flex;
+  justify-content: center;
+}
+
+.nav-links,
+.nav-links-dark {
+  font-family: "Verdana";
+  font-size: 20px;
+}
+.nav-links-dark {
+  color: rgb(255, 255, 255);
+}
+
+.nav-links {
+  color: rgb(0, 0, 0);
+}
+
+.nav-links:hover {
+  color: rgb(255, 255, 255);
+}
+
+.nav-links-dark:hover {
+  color: rgb(0, 0, 0);
+}
+.navcollapse {
+  position: absolute;
+  width: 100%;
+}
+
+.svg-button {
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  outline: none;
+}
+
+.svg-button:hover {
+  color: black;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.title {
+  color: black;
+  text-align: center;
+  font-size: 20px;
+  font-family: cursive;
+  font-weight: bold;
+}
+
+.title:hover {
+  color: white;
+}
+
+.nav {
+  width: 100vw;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.dark,
+.light {
+  color: white;
+  overflow: hidden;
+}
+
+.dark {
+  background-color: rgb(8, 27, 51);
+}
+
+.light {
+  background-color: rgb(225, 225, 225);
+}

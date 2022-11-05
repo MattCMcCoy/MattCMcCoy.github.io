@@ -39,6 +39,7 @@
     "@mui/material": "^5.10.12",
     "bootstrap": "^5.2.2",
     "framer-motion": "^7.6.4",
+    "gh-pages": "^4.0.0",
     "react-router-dom": "^6.4.3",
     "react-scripts": "^5.0.1",
     "react-type-animation": "^2.1.2",
