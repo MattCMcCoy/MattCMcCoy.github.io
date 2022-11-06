@@ -2,8 +2,8 @@ import React, { Component } from "react";
 import { renderAstronaut } from "./component-parts/Astronaut";
 import "../style/AboutMe.css";
 
-export class AboutMe extends Component {
-  static displayName = AboutMe.name;
+export class About extends Component {
+  static displayName = About.name;
 
   render() {
     return (

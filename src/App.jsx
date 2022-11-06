@@ -2,9 +2,10 @@ import React, { Component } from "react";
 import { Route, Routes } from "react-router-dom";
 import { Layout } from "./components/Layout";
 
-import { AboutMe } from "./components/AboutMe";
+import { About } from "./components/About";
 import { Home } from "./components/Home";
 import { Projects } from "./components/Projects";
+import { Resume } from "./components/Resume";
 
 const AppRoutes = [
   {
@@ -12,12 +13,16 @@ const AppRoutes = [
     element: <Home />,
   },
   {
-    path: "/aboutme",
-    element: <AboutMe />,
+    path: "/about",
+    element: <About />,
   },
   {
     path: "/projects",
     element: <Projects />,
+  },
+  {
+    path: "/resume",
+    element: <Resume />,
   },
 ];
 

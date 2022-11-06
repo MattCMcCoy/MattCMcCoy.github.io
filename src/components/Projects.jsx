@@ -56,7 +56,9 @@ export class Projects extends Component {
             <Grid>{ActionAreaCard(card)}</Grid>
           ))}
         </Grid>
-        {"Note: Clicking these cards will take you to the GitHub Repo."}
+        <div className="note-message">
+          {"Note: Clicking these cards will take you to the GitHub Repo."}
+        </div>
       </div>
     );
   }

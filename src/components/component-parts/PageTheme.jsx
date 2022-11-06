@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { useBetween } from "use-between";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCloudMoon } from "@fortawesome/free-solid-svg-icons";
+import { ReactComponent as Moon } from "../../images/cloud-moon-fill.svg";
 import { Switch } from "@mui/material";
 
 const useThemeStates = () => {
@@ -35,7 +34,9 @@ export function ControlTheme() {
       onChange={toggleStates}
       checked={checkedState}
       checkedIcon={
-        <FontAwesomeIcon icon={faCloudMoon} transform={"shrink right-3"} />
+        <Moon
+          style={{ height: 30, width: 20, transform: "translateY(-8px)" }}
+        />
       }
       height={25}
       width={50}

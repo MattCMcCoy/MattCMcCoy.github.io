@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import { Collapse, Nav, Navbar, NavItem, NavLink, Button } from "reactstrap";
 import { Link } from "react-router-dom";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars, faMinus } from "@fortawesome/fontawesome-free-solid";
 import { useCycle } from "framer-motion";
+import { ReactComponent as HamburgerClose } from "../images/list.svg";
+import { ReactComponent as HamburgerOpen } from "../images/dash-lg.svg";
 import { ControlTheme, useSharedTheme } from "./component-parts/PageTheme";
 import { ReactComponent as GitHubLogo } from "../images/github.svg";
 import { ReactComponent as LinkedInLogo } from "../images/linkedin.svg";
@@ -16,8 +16,9 @@ function NavigationBar() {
 
   const links = [
     { href: "/", text: "Home", className: "nav-links" },
-    { href: "#/aboutme", text: "About Me", className: "nav-links" },
+    { href: "#/about", text: "About Me", className: "nav-links" },
     { href: "#/projects", text: "Projects", className: "nav-links" },
+    { href: "#/resume", text: "Resume", className: "nav-links" },
   ];
 
   const { checkedState } = useSharedTheme();
@@ -33,10 +34,19 @@ function NavigationBar() {
             onMouseOut={switchColor}
             color={hamburgerColor}
           >
-            <FontAwesomeIcon
-              icon={collapsed ? faMinus : faBars}
-              color={hamburgerColor}
-            />
+            {collapsed ? (
+              <HamburgerOpen
+                style={{ height: 30, width: 20 }}
+                className="svg-button"
+                color="white"
+              />
+            ) : (
+              <HamburgerClose
+                style={{ height: 30, width: 20 }}
+                className="svg-button"
+                color="white"
+              />
+            )}
           </Button>
           <Button className="svg-button" href="/">
             <Home style={{ height: 30, width: 20 }} className="svg" />
