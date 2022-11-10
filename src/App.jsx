@@ -1,27 +1,27 @@
-import React, { Component } from "react";
-import { Route, Routes } from "react-router-dom";
-import { Layout } from "./components/Layout";
+import React, { Component } from 'react';
+import { Route, Routes } from 'react-router-dom';
+import { Layout } from './components/Layout';
 
-import { About } from "./components/About";
-import { Home } from "./components/Home";
-import { Projects } from "./components/Projects";
-import { Resume } from "./components/Resume";
+import { About } from './components/About';
+import { Home } from './components/Home';
+import { Projects } from './components/Projects';
+import { Resume } from './components/Resume';
 
 const AppRoutes = [
   {
-    index: "/",
+    index: '/',
     element: <Home />,
   },
   {
-    path: "/about",
+    path: '/about',
     element: <About />,
   },
   {
-    path: "/projects",
+    path: '/projects',
     element: <Projects />,
   },
   {
-    path: "/resume",
+    path: '/resume',
     element: <Resume />,
   },
 ];
