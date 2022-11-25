@@ -33,7 +33,13 @@ function NavigationBar() {
 
   return (
     <div>
-      <Navbar className={checkedState ? 'header-dark' : 'bg-slate-800'}>
+      <Navbar
+        className={
+          checkedState
+            ? 'absolute bg-slate-700 top-0 z-10 w-[100vw]'
+            : 'header-light'
+        }
+      >
         <div>
           <Button
             onClick={handleClick}
@@ -57,21 +63,21 @@ function NavigationBar() {
             )}
           </Button>
           <Button className='svg-button' href='/'>
-            <Home style={{ height: 30, width: 20 }} className='svg' />
+            <Home style={{ height: 30, width: 20 }} />
           </Button>
           <Button
             className='svg-button'
             href='https://github.com/MattCMcCoy'
             target='_blank'
           >
-            <GitHubLogo style={{ height: 30, width: 20 }} className='svg' />
+            <GitHubLogo style={{ height: 30, width: 20 }} />
           </Button>
           <Button
             className='svg-button'
             href='https://linkedin.com/in/matthewcmccoy'
             target='_blank'
           >
-            <LinkedInLogo style={{ height: 30, width: 20 }} className='svg' />
+            <LinkedInLogo style={{ height: 30, width: 20 }} />
           </Button>
           <ControlTheme />
         </div>
@@ -89,7 +95,6 @@ function NavigationBar() {
                 </NavLink>
               </NavItem>
             ))}
-            <NavItem></NavItem>
           </Nav>
         </Collapse>
       </Navbar>

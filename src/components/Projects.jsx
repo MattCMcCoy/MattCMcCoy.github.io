@@ -37,6 +37,15 @@ const cardContent = [
       'NOTE: This project was made private at my professors request. If you would like to view this code or learn more about it email me :).',
   },
   {
+    href: '',
+    image: require('../images/Concentration.png'),
+    title: 'Concentration',
+    description:
+      'Created a Java version of the Concentration matching game' +
+      '\n' +
+      'NOTE: This project was made private at my professors request. If you would like to view this code or learn more about it email me :).',
+  },
+  {
     href: 'https://github.com/MattCMcCoy/ChatProgram',
     image: require('../images/ChatProgram.png'),
     title: 'Chat Program',
