@@ -14,7 +14,6 @@ const welcomeMessage = [
   2000,
 ];
 
-// Video autoplay doesnt work on lowpower mode ios :)
 const videoContainer = (
   <div className='flexbox-container'>
     <video
@@ -27,7 +26,7 @@ const videoContainer = (
       playsInline={true}
       loop={true}
     />
-    <div class='centered'>
+    <div class='centered absolute'>
       <TypeAnimation
         sequence={welcomeMessage}
         speed={2}
