@@ -1,0 +1,13 @@
+﻿.dark,
+.light {
+  color: white;
+  overflow: hidden;
+}
+
+.dark {
+  background-color: rgb(8, 27, 51);
+}
+
+.light {
+  background-color: rgb(225, 225, 225);
+}
