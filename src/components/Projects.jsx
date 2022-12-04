@@ -9,7 +9,7 @@ const cardContent = [
     image: require('../images/PortfolioWebsite.png'),
     title: 'Portfolio Website',
     description:
-      'This website that I have been developing in my free time to learn React and CSS. A main goal of this website was keeping a responsive design so that it works on mobile.',
+      'This website that I have been developing in my free time to learn React. A main goal of this website was keeping a responsive design so that it works on mobile.',
   },
   {
     href: 'https://github.com/MattCMcCoy/AgarIOGame',
@@ -66,7 +66,7 @@ export class Projects extends Component {
           ))}
         </Grid>
         <div className='note-message'>
-          {'Note: Clicking these cards will take you to the GitHub Repo.'}
+          {'Note: Clicking </> will take you to the GitHub Repo.'}
         </div>
       </div>
     );

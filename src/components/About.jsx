@@ -1,12 +1,18 @@
 import React, { Component } from 'react';
 import { ReactComponent as Apple } from '../images/apple.svg';
 import { ReactComponent as Windows } from '../images/windows.svg';
-import { ReactComponent as VSCode } from '../images/visual-studio-code-icon.svg';
+import { ReactComponent as VSCode } from '../images/visualstudiocode.svg';
+import { ReactComponent as VS } from '../images/visualstudio.svg';
 import { ReactComponent as Linux } from '../images/linux-icon.svg';
 import { ReactComponent as Python } from '../images/python.svg';
 import { ReactComponent as Java } from '../images/java.svg';
 import { ReactComponent as Eclipse } from '../images/eclipse.svg';
 import { ReactComponent as IntelliJ } from '../images/intellij.svg';
+import { ReactComponent as JavaScript } from '../images/javascript.svg';
+import { ReactComponent as CSharp } from '../images/c#.svg';
+import { ReactComponent as C } from '../images/c.svg';
+import { ReactComponent as Git } from '../images/git.svg';
+import { ReactComponent as GitHub } from '../images/github.svg';
 import { SvgIcon } from '@mui/material';
 
 function AboutMe() {
@@ -17,8 +23,24 @@ function AboutMe() {
     'Kayaking',
   ];
 
-  const languages = [Python, Java];
-  const tools = [Apple, VSCode, IntelliJ, Eclipse, Windows, Linux];
+  const languages = [
+    { language: Java, title: 'Java' },
+    { language: CSharp, title: 'C#' },
+    { language: JavaScript, title: 'JavaScript' },
+    { language: C, title: 'C' },
+    { language: Python, title: 'Python' },
+  ];
+  const tools = [
+    { tool: Apple, title: 'Apple' },
+    { tool: VSCode, title: 'VSCode' },
+    { tool: Git, title: 'Git' },
+    { tool: GitHub, title: 'GitHub' },
+    { tool: Windows, title: 'Windows' },
+    { tool: IntelliJ, title: 'IntelliJ' },
+    { tool: VS, title: 'Visual Studio' },
+    { tool: Eclipse, title: 'Eclipse' },
+    { tool: Linux, title: 'Linux' },
+  ];
 
   return (
     <div className='ml-10 p-10'>
@@ -64,11 +86,14 @@ function AboutMe() {
         </header>
         <div className='grid lg:grid-cols-4 md:grid-cols-3 space-y-5 mt-5 grid-cols-2'>
           {languages.map((language) => (
-            <SvgIcon
-              component={language}
-              inheritViewBox
-              sx={{ fontSize: 150 }}
-            />
+            <div className='group'>
+              <div className='hidden group-hover:block'>{language.title}</div>
+              <SvgIcon
+                component={language.language}
+                inheritViewBox
+                sx={{ fontSize: 150 }}
+              ></SvgIcon>
+            </div>
           ))}
         </div>
         <header id='Tools' className='text-3xl'>
@@ -76,7 +101,14 @@ function AboutMe() {
         </header>
         <div className='grid lg:grid-cols-4 md:grid-cols-3 space-y-5 mt-5 grid-cols-2'>
           {tools.map((tool) => (
-            <SvgIcon component={tool} inheritViewBox sx={{ fontSize: 150 }} />
+            <div className='group'>
+              <div className='hidden group-hover:block'>{tool.title}</div>
+              <SvgIcon
+                component={tool.tool}
+                inheritViewBox
+                sx={{ fontSize: 150 }}
+              ></SvgIcon>
+            </div>
           ))}
         </div>
       </div>
