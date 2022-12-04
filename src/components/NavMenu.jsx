@@ -88,8 +88,8 @@ function NavigationBar() {
                 inheritViewBox
                 sx={{
                   fontSize: 20,
-                  color: checkedState ? 'white' : 'black',
-                  '&:hover': { color: checkedState ? 'black' : 'white' },
+                  color: 'white',
+                  '&:hover': { color: 'black' },
                 }}
               />
             </Button>
