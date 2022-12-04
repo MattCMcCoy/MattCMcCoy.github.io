@@ -110,7 +110,7 @@ function AboutMe() {
                 component={language.language}
                 inheritViewBox
                 sx={{ fontSize: 150, color: checkedState ? '' : 'black' }}
-              ></SvgIcon>
+              />
             </div>
           ))}
         </div>

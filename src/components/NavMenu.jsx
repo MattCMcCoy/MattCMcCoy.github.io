@@ -8,17 +8,33 @@ import { ControlTheme, useSharedTheme } from './component-parts/PageTheme';
 import { ReactComponent as GitHubLogo } from '../images/github.svg';
 import { ReactComponent as LinkedInLogo } from '../images/linkedin.svg';
 import { ReactComponent as Home } from '../images/house.svg';
-import '../style/NavMenu.css';
+import { SvgIcon } from '@mui/material';
+import clsx from 'clsx';
+import '../style/Page-Theme.css';
 
 function NavigationBar() {
   const [collapsed, toggleCollapse] = useState(false);
   const [hamburgerColor, switchColor] = useCycle('black', 'white');
 
   const links = [
-    { href: '/', text: 'Home', className: 'nav-links' },
-    { href: '#/about', text: 'About Me', className: 'nav-links' },
-    { href: '#/projects', text: 'Projects', className: 'nav-links' },
-    { href: '#/resume', text: 'Resume', className: 'nav-links' },
+    { href: '/', text: 'Home' },
+    { href: '#/about', text: 'About Me' },
+    { href: '#/projects', text: 'Projects' },
+    { href: '#/resume', text: 'Resume' },
+  ];
+
+  const navbarIcons = [
+    { icon: Home, href: '/', target: null },
+    {
+      icon: GitHubLogo,
+      href: 'https://github.com/MattCMcCoy',
+      target: '_blank',
+    },
+    {
+      icon: LinkedInLogo,
+      href: 'https://linkedin.com/in/matthewcmccoy',
+      target: '_blank',
+    },
   ];
 
   const { checkedState } = useSharedTheme();
@@ -34,16 +50,15 @@ function NavigationBar() {
   return (
     <div>
       <Navbar
-        className={
-          checkedState
-            ? 'absolute bg-slate-700 top-0 z-10 w-[100vw]'
-            : 'header-light'
-        }
+        className={clsx(
+          'absolute top-0 z-10 w-[100vw]',
+          checkedState ? 'bg-slate-700' : 'bg-slate-500'
+        )}
       >
         <div>
           <Button
             onClick={handleClick}
-            className='svg-button'
+            className='border-none outline-none bg-transparent hover:text-black lg:hidden visible'
             onMouseOver={switchColor}
             onMouseOut={switchColor}
             color={hamburgerColor}
@@ -51,44 +66,64 @@ function NavigationBar() {
             {collapsed ? (
               <HamburgerOpen
                 style={{ height: 30, width: 20 }}
-                className='svg-button'
+                className='border-none outline-none bg-transparent hover:text-black'
                 color='white'
               />
             ) : (
               <HamburgerClose
                 style={{ height: 30, width: 20 }}
-                className='svg-button'
+                className='border-none outline-none bg-transparent hover:text-black'
                 color='white'
               />
             )}
           </Button>
-          <Button className='svg-button' href='/'>
-            <Home style={{ height: 30, width: 20 }} />
-          </Button>
-          <Button
-            className='svg-button'
-            href='https://github.com/MattCMcCoy'
-            target='_blank'
-          >
-            <GitHubLogo style={{ height: 30, width: 20 }} />
-          </Button>
-          <Button
-            className='svg-button'
-            href='https://linkedin.com/in/matthewcmccoy'
-            target='_blank'
-          >
-            <LinkedInLogo style={{ height: 30, width: 20 }} />
-          </Button>
+          {navbarIcons.map((navbarIcon) => (
+            <Button
+              href={navbarIcon.href}
+              className='border-none outline-none bg-transparent hover:fill-white'
+              target={navbarIcon.target}
+            >
+              <SvgIcon
+                component={navbarIcon.icon}
+                inheritViewBox
+                sx={{
+                  fontSize: 20,
+                  color: checkedState ? 'white' : 'black',
+                  '&:hover': { color: checkedState ? 'black' : 'white' },
+                }}
+              />
+            </Button>
+          ))}
           <ControlTheme />
         </div>
-        <Collapse isOpen={collapsed} navbar>
-          <Nav fill navbar className='navmenu'>
+        <Nav fill navbar className='grid-cols-4 space-x-2 lg:grid hidden'>
+          {links.map((link) => (
+            <NavItem>
+              <NavLink
+                as={Link}
+                href={link.href}
+                className={clsx(
+                  'text-sm hover:underline',
+                  checkedState ? 'text-white' : 'text-black'
+                )}
+                onClick={handleBlur}
+              >
+                {link.text}
+              </NavLink>
+            </NavItem>
+          ))}
+        </Nav>
+        <Collapse isOpen={collapsed} navbar className='lg:hidden block'>
+          <Nav fill navbar>
             {links.map((link) => (
               <NavItem>
                 <NavLink
                   as={Link}
                   href={link.href}
-                  className={checkedState ? 'nav-links-dark' : 'nav-links'}
+                  className={clsx(
+                    'text-sm hover:font-bold',
+                    checkedState ? 'text-white ' : 'text-black'
+                  )}
                   onClick={handleBlur}
                 >
                   {link.text}
