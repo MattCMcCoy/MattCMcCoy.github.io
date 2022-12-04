@@ -1,39 +1,39 @@
-import React, { Component } from "react";
-import { TypeAnimation } from "react-type-animation";
-import drone from "../images/Drone-Video.mp4";
-import "../style/Home.css";
+import React, { Component } from 'react';
+import { TypeAnimation } from 'react-type-animation';
+import drone from '../images/Drone-Video.mp4';
+import '../style/Home.css';
 
 const welcomeMessage = [
-  "Hey My Name Is Matt! :)",
+  'Hey My Name Is Matt! :)\n I Enjoy Photography.',
   2000,
-  "",
-  20,
-  "Welcome To My Life.",
+  'Hey My Name Is Matt! :)\n I Enjoy Hiking.',
   2000,
-  "",
-  20,
+  'Hey My Name Is Matt! :)\n I Enjoy Learning New Things.',
+  2000,
+  'Hey My Name Is Matt! :)\n I Enjoy Exploring New Places.',
+  2000,
 ];
 
-// Video autoplay doesnt work on lowpower mode ios :)
 const videoContainer = (
-  <div className="flexbox-container">
+  <div className='flexbox-container'>
     <video
-      className="header_video"
-      id="dronevideo"
+      className='header_video'
+      id='dronevideo'
       src={drone}
-      type="video/mp4"
+      type='video/mp4'
       muted={true}
       autoPlay={true}
       playsInline={true}
       loop={true}
     />
-    <div class="centered">
+    <div class='centered absolute'>
       <TypeAnimation
         sequence={welcomeMessage}
-        speed={10}
-        wrapper="h2"
+        speed={2}
         repeat={Infinity}
-        style={{ fontSize: "15px" }}
+        wrapper='h2'
+        className='whitespace-pre-wrap'
+        style={{ fontSize: '3vw' }}
       />
     </div>
   </div>

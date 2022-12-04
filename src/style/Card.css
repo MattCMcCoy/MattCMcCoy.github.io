@@ -27,7 +27,9 @@
 .darkCardContentStyle {
   height: 30vh;
   width: 30vw;
+  max-height: 250px;
   max-width: 300px;
+  min-height: 125px;
   border: 0px;
   white-space: pre-wrap;
 }
