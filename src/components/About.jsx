@@ -13,9 +13,13 @@ import { ReactComponent as CSharp } from '../images/c#.svg';
 import { ReactComponent as C } from '../images/c.svg';
 import { ReactComponent as Git } from '../images/git.svg';
 import { ReactComponent as GitHub } from '../images/github.svg';
+import { useSharedTheme } from './component-parts/PageTheme';
+import clsx from 'clsx';
 import { SvgIcon } from '@mui/material';
 
 function AboutMe() {
+  const { checkedState } = useSharedTheme();
+
   const activities = [
     'Aerial photography and videography',
     'Hiking',
@@ -48,10 +52,14 @@ function AboutMe() {
         <div id='AboutMe' className='mt-[10vh] mb-10 space-y-7'>
           <div>
             <p>
-              <span className='text-xl'>Hey my name is </span>
-              <span className='text-teal-400 text-xl'>Matt McCoy! </span>
+              <span
+                className={clsx('text-xl', checkedState ? '' : 'text-black')}
+              >
+                Hey my name is
+              </span>
+              <span className='text-teal-400 text-xl'> Matt McCoy! </span>
             </p>
-            <p className='text-lg'>
+            <p className={clsx('text-xl', checkedState ? '' : 'text-black')}>
               I am a fourth year
               <span className='text-teal-400'> Computer Science </span>
               student with a concentration in
@@ -63,7 +71,7 @@ function AboutMe() {
             </p>
           </div>
           <div>
-            <p className='text-xl'>
+            <p className={clsx('text-xl', checkedState ? '' : 'text-black')}>
               Apart from coding here are some other things I enjoy:
             </p>
             {activities.map((activity) => (
@@ -81,32 +89,52 @@ function AboutMe() {
         </div>
       </div>
       <div>
-        <header id='Languages' className='text-3xl'>
+        <header
+          id='Languages'
+          className={clsx('text-3xl', checkedState ? '' : 'text-black')}
+        >
           Languages I Know:
         </header>
         <div className='grid lg:grid-cols-4 md:grid-cols-3 space-y-5 mt-5 grid-cols-2'>
           {languages.map((language) => (
             <div className='group'>
-              <div className='hidden group-hover:block'>{language.title}</div>
+              <div
+                className={clsx(
+                  'text-xl hidden group-hover:block',
+                  checkedState ? '' : 'text-black'
+                )}
+              >
+                {language.title}
+              </div>
               <SvgIcon
                 component={language.language}
                 inheritViewBox
-                sx={{ fontSize: 150 }}
+                sx={{ fontSize: 150, color: checkedState ? '' : 'black' }}
               ></SvgIcon>
             </div>
           ))}
         </div>
-        <header id='Tools' className='text-3xl'>
+        <header
+          id='Tools'
+          className={clsx('text-3xl', checkedState ? '' : 'text-black')}
+        >
           Tools I Use:
         </header>
         <div className='grid lg:grid-cols-4 md:grid-cols-3 space-y-5 mt-5 grid-cols-2'>
           {tools.map((tool) => (
             <div className='group'>
-              <div className='hidden group-hover:block'>{tool.title}</div>
+              <div
+                className={clsx(
+                  'text-xl hidden group-hover:block',
+                  checkedState ? '' : 'text-black'
+                )}
+              >
+                {tool.title}
+              </div>
               <SvgIcon
                 component={tool.tool}
                 inheritViewBox
-                sx={{ fontSize: 150 }}
+                sx={{ fontSize: 150, color: checkedState ? '' : 'black' }}
               ></SvgIcon>
             </div>
           ))}
