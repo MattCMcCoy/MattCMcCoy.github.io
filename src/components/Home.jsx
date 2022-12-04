@@ -26,7 +26,7 @@ const videoContainer = (
       playsInline={true}
       loop={true}
     />
-    <div class='centered absolute'>
+    <div className='centered absolute'>
       <TypeAnimation
         sequence={welcomeMessage}
         speed={2}

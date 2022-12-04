@@ -82,6 +82,7 @@ function NavigationBar() {
               href={navbarIcon.href}
               className='border-none outline-none bg-transparent hover:fill-white'
               target={navbarIcon.target}
+              key={navbarIcon.href}
             >
               <SvgIcon
                 component={navbarIcon.icon}
@@ -98,7 +99,7 @@ function NavigationBar() {
         </div>
         <Nav fill navbar className='grid-cols-4 space-x-2 lg:grid hidden'>
           {links.map((link) => (
-            <NavItem>
+            <NavItem key={link.href}>
               <NavLink
                 as={Link}
                 href={link.href}
@@ -116,7 +117,7 @@ function NavigationBar() {
         <Collapse isOpen={collapsed} navbar className='lg:hidden block'>
           <Nav fill navbar>
             {links.map((link) => (
-              <NavItem>
+              <NavItem key={link.href}>
                 <NavLink
                   as={Link}
                   href={link.href}
