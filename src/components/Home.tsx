@@ -5,17 +5,17 @@ import '../style/Home.css';
 
 export default function Home() {
   const welcomeMessage = [
-    'Hey My Name Is Matt! :)\n I Enjoy Photography.',
+    'Hey, My Name Is Matt! :)\n I Enjoy Photography.',
     2000,
-    'Hey My Name Is Matt! :)\n I Enjoy Hiking.',
+    'Hey, My Name Is Matt! :)\n I Enjoy Hiking.',
     2000,
-    'Hey My Name Is Matt! :)\n I Enjoy Learning New Things.',
+    'Hey, My Name Is Matt! :)\n I Enjoy Flying Drones.',
     2000,
-    'Hey My Name Is Matt! :)\n I Enjoy Exploring New Places.',
+    'Hey, My Name Is Matt! :)\n I Enjoy Board Games.',
     2000,
   ];
   return (
-    <div className='flexbox-container'>
+    <div className='flex min-h-screen justify-center items-center'>
       <video
         className='header_video'
         id='dronevideo'
@@ -25,14 +25,14 @@ export default function Home() {
         playsInline={true}
         loop={true}
       />
-      <div className='centered absolute w-[28rem]'>
+      <div className='m-auto z-20 block absolute'>
         <TypeAnimation
           sequence={welcomeMessage}
           speed={2}
           repeat={Infinity}
           wrapper='h2'
-          className='whitespace-pre-wrap'
-          style={{ fontSize: '3vw' }}
+          className='whitespace-pre-wrap font-bold'
+          style={{ fontSize: '7vw' }}
         />
       </div>
     </div>

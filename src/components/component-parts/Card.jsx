@@ -17,7 +17,7 @@ function ProduceCard({ href, image, title, description }) {
         className={
           checkedState
             ? 'darkCardContentStyle grid lg:grid-rows-[20px_auto_auto] md:grid-rows-[20px_auto_auto] grid-rows-2 space-y-2'
-            : 'cardContentStyle'
+            : 'cardContentStyle grid lg:grid-rows-[20px_auto_auto] md:grid-rows-[20px_auto_auto] grid-rows-2 space-y-2'
         }
       >
         <Typography component='div' fontWeight='bold'>
