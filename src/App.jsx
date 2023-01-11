@@ -3,7 +3,7 @@ import { Route, Routes } from 'react-router-dom';
 import { Layout } from './components/Layout';
 
 import { About } from './components/About';
-import { Home } from './components/Home';
+import Home from './components/Home.tsx';
 import { Projects } from './components/Projects';
 import { Resume } from './components/Resume';
 

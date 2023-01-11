@@ -51,6 +51,7 @@ function AboutMe() {
       <div className='grid md:grid-cols-2 grid-cols-1'>
         <div id='AboutMe' className='mt-[10vh] mb-10 space-y-7'>
           <div>
+            *This Page Is Currently In Progress*
             <p>
               <span
                 className={clsx('text-xl', checkedState ? '' : 'text-black')}
@@ -65,9 +66,7 @@ function AboutMe() {
               student with a concentration in
               <span className='text-teal-400'> Human Centered Computing </span>
               at
-              <span className='text-teal-400'> Northeastern University. </span>I
-              love learning new things and pushing myself to strive for the very
-              best with everything I do.
+              <span className='text-teal-400'> Northeastern University. </span>
             </p>
           </div>
           <div>
