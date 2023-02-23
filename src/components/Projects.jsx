@@ -12,22 +12,6 @@ const cardContent = [
       'This website that I have been developing in my free time to learn React. A main goal of this website was keeping a responsive design so that it works on mobile.',
   },
   {
-    href: 'https://github.com/MattCMcCoy/AgarIOGame',
-    image: require('../images/agario.png'),
-    title: 'Agar.io Remake',
-    description:
-      'A project in which entails using OOP principles inorder to make a version of the Agar.io online game.',
-  },
-  {
-    href: '',
-    image: require('../images/ImageProcessor.png'),
-    title: 'Photo Editor',
-    description:
-      'An image processor in Java utilizing Swing for a GUI and use of command line arguments; the image processor allows the user to load, mutate, and save the image to the user’s computer' +
-      '\n' +
-      'NOTE: This project was made private at my professors request. If you would like to view this code or learn more about it email me :).',
-  },
-  {
     href: '',
     image: require('../images/marblesolitaire.png'),
     title: 'Marble Solitaire',
@@ -42,6 +26,22 @@ const cardContent = [
     title: 'Concentration',
     description:
       'Created a Java version of the Concentration matching game' +
+      '\n' +
+      'NOTE: This project was made private at my professors request. If you would like to view this code or learn more about it email me :).',
+  },
+  {
+    href: 'https://github.com/MattCMcCoy/AgarIOGame',
+    image: require('../images/agario.png'),
+    title: 'Agar.io Remake',
+    description:
+      'A project in which entails using OOP principles inorder to make a version of the Agar.io online game.',
+  },
+  {
+    href: '',
+    image: require('../images/ImageProcessor.png'),
+    title: 'Photo Editor',
+    description:
+      'An image processor in Java utilizing Swing for a GUI and use of command line arguments; the image processor allows the user to load, mutate, and save the image to the user’s computer' +
       '\n' +
       'NOTE: This project was made private at my professors request. If you would like to view this code or learn more about it email me :).',
   },
@@ -65,9 +65,7 @@ export class Projects extends Component {
             <Grid>{ActionAreaCard(card)}</Grid>
           ))}
         </Grid>
-        <div className='note-message'>
-          {'Note: Clicking </> will take you to the GitHub Repo.'}
-        </div>
+        <div className='note-message'></div>
       </div>
     );
   }

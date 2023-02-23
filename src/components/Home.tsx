@@ -1,3 +1,4 @@
+/// <reference path='../index.d.ts' />;
 import React from 'react';
 import { TypeAnimation } from 'react-type-animation';
 import drone from '../images/Drone-Video.mp4';

@@ -97,7 +97,7 @@ function NavigationBar() {
           ))}
           <ControlTheme />
         </div>
-        <Nav fill navbar className='grid-cols-4 space-x-2 lg:grid hidden'>
+        <Nav fill navbar className='grid-cols-4 space-x-2 lg:grid hidden mr-5'>
           {links.map((link) => (
             <NavItem key={link.href}>
               <NavLink
