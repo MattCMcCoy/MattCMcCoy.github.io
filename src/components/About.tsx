@@ -1,4 +1,3 @@
-import React, { Component } from 'react';
 import { ReactComponent as Apple } from '../images/apple.svg';
 import { ReactComponent as Windows } from '../images/windows.svg';
 import { ReactComponent as VSCode } from '../images/visualstudiocode.svg';
@@ -18,7 +17,7 @@ import clsx from 'clsx';
 import { SvgIcon } from '@mui/material';
 import { Button } from 'reactstrap';
 
-function AboutMe() {
+export default function About() {
   const { checkedState } = useSharedTheme();
 
   const activities = [
@@ -167,12 +166,4 @@ function AboutMe() {
       </div>
     </div>
   );
-}
-
-export class About extends Component {
-  static displayName = About.name;
-
-  render() {
-    return <AboutMe />;
-  }
 }

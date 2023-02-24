@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { useBetween } from 'use-between';
 import { ReactComponent as Moon } from '../../images/cloud-moon-fill.svg';
 import { Switch } from '@mui/material';
@@ -38,8 +38,6 @@ export function ControlTheme() {
           style={{ height: 30, width: 20, transform: 'translateY(-8px)' }}
         />
       }
-      height={25}
-      width={50}
     />
   );
 }

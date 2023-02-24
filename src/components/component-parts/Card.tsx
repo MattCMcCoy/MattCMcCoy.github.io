@@ -1,4 +1,3 @@
-import React from 'react';
 import { useSharedTheme } from './PageTheme';
 import { Typography, CardMedia, CardContent, Card } from '@mui/material';
 import { Button } from 'reactstrap';
@@ -6,8 +5,14 @@ import { Button } from 'reactstrap';
 import { ReactComponent as CodeBracket } from '../../images/code-bracket.svg';
 
 import '../../style/Card.css';
+interface CardProps {
+  href: string;
+  image: any;
+  title: string;
+  description: string;
+}
 
-function ProduceCard({ href, image, title, description }) {
+function ProduceCard({ href, image, title, description }: CardProps) {
   const { checkedState } = useSharedTheme();
 
   return (
@@ -44,7 +49,13 @@ function ProduceCard({ href, image, title, description }) {
     </Card>
   );
 }
-export function ActionAreaCard({ href, image, title, description }) {
+
+export default function DescriptionCard({
+  href,
+  image,
+  title,
+  description,
+}: CardProps) {
   return (
     <ProduceCard
       href={href}

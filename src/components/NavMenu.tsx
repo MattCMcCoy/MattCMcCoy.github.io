@@ -1,4 +1,4 @@
-import React, { Component, useState } from 'react';
+import { useState } from 'react';
 import { Collapse, Nav, Navbar, NavItem, NavLink, Button } from 'reactstrap';
 import { Link } from 'react-router-dom';
 import { useCycle } from 'framer-motion';
@@ -43,7 +43,7 @@ function NavigationBar() {
     toggleCollapse(!collapsed);
   };
 
-  const handleBlur = (e) => {
+  const handleBlur = (e: any) => {
     if (e.target !== NavMenu) toggleCollapse(false);
   };
 
@@ -59,8 +59,8 @@ function NavigationBar() {
           <Button
             onClick={handleClick}
             className='border-none outline-none bg-transparent hover:text-black lg:hidden visible'
-            onMouseOver={switchColor}
-            onMouseOut={switchColor}
+            onMouseOver={() => switchColor}
+            onMouseOut={() => switchColor}
             color={hamburgerColor}
           >
             {collapsed ? (
@@ -138,8 +138,6 @@ function NavigationBar() {
   );
 }
 
-export class NavMenu extends Component {
-  render() {
-    return <NavigationBar />;
-  }
+export default function NavMenu() {
+  return <NavigationBar />;
 }

@@ -1,5 +1,4 @@
-import React, { Component } from 'react';
-import { ActionAreaCard } from './component-parts/Card';
+import DescriptionCard from './component-parts/Card';
 import '../style/Projects.css';
 import { Grid } from '@mui/material';
 
@@ -54,19 +53,15 @@ const cardContent = [
   },
 ];
 
-export class Projects extends Component {
-  static displayName = Projects.name;
-
-  render() {
-    return (
-      <div className='project-container'>
-        <Grid container className='card-container'>
-          {cardContent.map((card) => (
-            <Grid>{ActionAreaCard(card)}</Grid>
-          ))}
-        </Grid>
-        <div className='note-message'></div>
-      </div>
-    );
-  }
+export default function Projects() {
+  return (
+    <div className='project-container'>
+      <Grid container className='card-container'>
+        {cardContent.map((card) => (
+          <Grid>{DescriptionCard(card)}</Grid>
+        ))}
+      </Grid>
+      <div className='note-message'></div>
+    </div>
+  );
 }
