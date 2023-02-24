@@ -19,10 +19,11 @@ export default function Home() {
         className='object-cover w-[100vw] h-[100vh] absolute top-0 left-0 z-10'
         id='dronevideo'
         src={drone}
-        muted={true}
-        autoPlay={true}
-        playsInline={true}
-        loop={true}
+        muted
+        autoPlay
+        playsInline
+        loop
+        preload='true'
       />
       <div className='m-auto z-20 block absolute'>
         <TypeAnimation
