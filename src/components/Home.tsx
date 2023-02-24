@@ -1,7 +1,6 @@
 /// <reference path='../index.d.ts' />;
 import { TypeAnimation } from 'react-type-animation';
 import drone from '../images/Drone-Video.mp4';
-import '../style/Home.css';
 
 export default function Home() {
   const welcomeMessage = [
@@ -17,7 +16,7 @@ export default function Home() {
   return (
     <div className='flex min-h-screen justify-center items-center'>
       <video
-        className='header_video'
+        className='object-cover w-[100vw] h-[100vh] absolute top-0 left-0 z-10'
         id='dronevideo'
         src={drone}
         muted={true}

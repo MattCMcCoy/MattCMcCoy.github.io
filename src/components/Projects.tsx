@@ -1,5 +1,4 @@
 import DescriptionCard from './component-parts/Card';
-import '../style/Projects.css';
 import { Grid } from '@mui/material';
 
 const cardContent = [
@@ -55,13 +54,15 @@ const cardContent = [
 
 export default function Projects() {
   return (
-    <div className='project-container'>
-      <Grid container className='card-container'>
+    <div className='text-center mt-[10vh] text-black absolute z-10'>
+      <Grid
+        container
+        className='rounded-xl w-[100%] h-[100%] justify-center flex'
+      >
         {cardContent.map((card) => (
           <Grid>{DescriptionCard(card)}</Grid>
         ))}
       </Grid>
-      <div className='note-message'></div>
     </div>
   );
 }
