@@ -10,7 +10,6 @@ import { ReactComponent as LinkedInLogo } from '../images/linkedin.svg';
 import { ReactComponent as Home } from '../images/house.svg';
 import { SvgIcon } from '@mui/material';
 import clsx from 'clsx';
-import '../style/Page-Theme.css';
 
 function NavigationBar() {
   const [collapsed, toggleCollapse] = useState(false);
@@ -51,7 +50,7 @@ function NavigationBar() {
     <div>
       <Navbar
         className={clsx(
-          'absolute top-0 z-10 w-[100vw]',
+          'absolute top-0 z-20 w-[100vw]',
           checkedState ? 'bg-slate-700' : 'bg-slate-500'
         )}
       >
