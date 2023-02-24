@@ -23,9 +23,9 @@ export default function Home() {
         autoPlay
         playsInline
         loop
-        controls
-        preload='auto'
-      />
+      >
+        drone video
+      </video>
       <div className='m-auto z-20 block absolute'>
         <TypeAnimation
           sequence={welcomeMessage}
