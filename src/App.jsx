@@ -1,11 +1,11 @@
-import React, { Component } from 'react';
+import { Component } from 'react';
 import { Route, Routes } from 'react-router-dom';
-import { Layout } from './components/Layout';
+import { Layout } from './Layout';
 
-import { About } from './components/About';
-import Home from './components/Home.tsx';
-import { Projects } from './components/Projects';
-import { Resume } from './components/Resume';
+import About from './components/About';
+import Home from './components/Home';
+import Projects from './components/Projects';
+import Resume from './components/Resume';
 
 const AppRoutes = [
   {
