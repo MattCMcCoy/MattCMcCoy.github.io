@@ -23,7 +23,8 @@ export default function Home() {
         autoPlay
         playsInline
         loop
-        preload='true'
+        controls
+        preload='auto'
       />
       <div className='m-auto z-20 block absolute'>
         <TypeAnimation
