@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.64603328.css",
-    "main.js": "/static/js/main.e09b3bfc.js",
+    "main.css": "/static/css/main.b582668b.css",
+    "main.js": "/static/js/main.1ecf17ea.js",
     "static/media/Drone-Video.mp4": "/static/media/Drone-Video.50d078992fc5a7153b32.mp4",
     "static/media/PortfolioWebsite.png": "/static/media/PortfolioWebsite.cfd0be5218a495b224f9.png",
     "static/media/ImageProcessor.png": "/static/media/ImageProcessor.390349020d6d2f7910ec.png",
@@ -16,6 +16,7 @@
     "static/media/c.svg": "/static/media/c.f3c93ffaea1321f5cfc0092ef579e390.svg",
     "static/media/git.svg": "/static/media/git.f9bc1ab78b517191a67771d4e27d6cbf.svg",
     "static/media/eclipse.svg": "/static/media/eclipse.ae30af57a1920aee795f8b11efe02d75.svg",
+    "static/media/typescript.svg": "/static/media/typescript.32fb130a1a03eac5cd3d509d5b96f188.svg",
     "static/media/python.svg": "/static/media/python.026a62687ef705a39cfc755d7457859c.svg",
     "static/media/intellij.svg": "/static/media/intellij.16397e34a29f8f1093fda2ad78df9fd4.svg",
     "static/media/javascript.svg": "/static/media/javascript.081325c6f229605dce15142ddd948d6d.svg",
@@ -26,16 +27,17 @@
     "static/media/visualstudiocode.svg": "/static/media/visualstudiocode.c95ccce217b9216b765737214d743d02.svg",
     "index.html": "/index.html",
     "static/media/cloud-moon-fill.svg": "/static/media/cloud-moon-fill.efc9e3d321a898b74debda27f287fb8c.svg",
+    "static/media/tailwind.svg": "/static/media/tailwind.973c73e85d4daa24b257ba20298716c4.svg",
     "static/media/house.svg": "/static/media/house.8173eeb9d12f4c7ced962ebbe5b0a6d0.svg",
     "static/media/list.svg": "/static/media/list.f98b98b4905b36b844a65327ecaadc32.svg",
     "static/media/code-bracket.svg": "/static/media/code-bracket.c78526b6af95e526c4d9ef2220c6d775.svg",
     "static/media/windows.svg": "/static/media/windows.dbfb3cd59f74a4be73cc62ef9c98aece.svg",
     "static/media/dash-lg.svg": "/static/media/dash-lg.05e15557607e2536efbf7947e3394ce0.svg",
-    "main.64603328.css.map": "/static/css/main.64603328.css.map",
-    "main.e09b3bfc.js.map": "/static/js/main.e09b3bfc.js.map"
+    "main.b582668b.css.map": "/static/css/main.b582668b.css.map",
+    "main.1ecf17ea.js.map": "/static/js/main.1ecf17ea.js.map"
   },
   "entrypoints": [
-    "static/css/main.64603328.css",
-    "static/js/main.e09b3bfc.js"
+    "static/css/main.b582668b.css",
+    "static/js/main.1ecf17ea.js"
   ]
 }
