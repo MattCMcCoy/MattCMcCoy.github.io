@@ -1,5 +1,11 @@
 import { useSharedTheme } from './PageTheme';
-import { Typography, CardMedia, CardContent, Card } from '@mui/material';
+import {
+  Typography,
+  CardMedia,
+  CardContent,
+  Card,
+  SvgIcon,
+} from '@mui/material';
 import { Button } from 'reactstrap';
 import clsx from 'clsx';
 
@@ -10,17 +16,22 @@ interface CardProps {
   image: any;
   title: string;
   description: string;
+  language: any[];
 }
 
-function ProduceCard({ href, image, title, description }: CardProps) {
+function ProduceCard({ href, image, title, description, language }: CardProps) {
   const { checkedState } = useSharedTheme();
 
   return (
     <Card className='mr-[2vw] ml-[2vw] mb-[2vh] mt-[2vh]'>
-      <CardMedia image={image} className='h-[20vh] w-[30vw] max-w-[300px]' />
+      <CardMedia
+        image={image}
+        className='h-[20vh] w-[40vw] max-w-[300px]'
+      ></CardMedia>
+
       <CardContent
         className={clsx(
-          'md:h-[30vh] md:w-[30vw] max-h-[250px] max-w-[300px] min-h-[125px] border-0 whitespace-pre-wrap grid lg:grid-rows-[20px_auto_auto] md:grid-rows-[20px_auto_auto] grid-rows-2 space-y-2',
+          'pt-10 md:h-[30vh] md:w-[40vw] max-h-[250px] max-w-[300px] min-h-[125px] border-0 whitespace-pre-wrap grid lg:grid-rows-[20px_auto_auto] md:grid-rows-[20px_auto_auto] grid-rows-2 space-y-2',
           checkedState ? 'bg-slate-400' : 'bg-sky-200'
         )}
       >
@@ -34,17 +45,36 @@ function ProduceCard({ href, image, title, description }: CardProps) {
         >
           {description}
         </Typography>
+      </CardContent>
+      <div
+        className={clsx(
+          'flex grid-cols-2 pb-2 pr-1 pl-1',
+          checkedState ? 'bg-slate-400' : 'bg-sky-200'
+        )}
+      >
+        {language.map((l) => {
+          return (
+            <SvgIcon
+              component={l}
+              inheritViewBox
+              sx={{
+                fontSize: 40,
+                color: 'white',
+              }}
+            />
+          );
+        })}
         {href ? (
           <Button
             href={href}
-            className='sticky bg-slate-600 border-0 group grid grid-cols-2 mt-auto ml-auto h-9 lg:w-32'
+            className='sticky bg-slate-600 border-0 group md:grid md:grid-cols-2 w-11 ml-auto h-9 md:w-32'
             target='_blank'
           >
-            <CodeBracket className='bottom-0 sticky w-5 h-5 group-hover:text-black' />
-            <p className='group-hover:text-black'>GitHub</p>
+            <CodeBracket className='w-5 h-5 group-hover:text-black' />
+            <p className='group-hover:text-black md:block hidden'>GitHub</p>
           </Button>
         ) : null}
-      </CardContent>
+      </div>
     </Card>
   );
 }
@@ -54,6 +84,7 @@ export default function DescriptionCard({
   image,
   title,
   description,
+  language,
 }: CardProps) {
   return (
     <ProduceCard
@@ -61,6 +92,7 @@ export default function DescriptionCard({
       image={image}
       title={title}
       description={description}
+      language={language}
     />
   );
 }
