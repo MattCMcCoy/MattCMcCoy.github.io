@@ -16,6 +16,16 @@ const cardContent = [
   },
   {
     href: '',
+    image: require('../images/ImageProcessor.png'),
+    title: 'Photo Editor',
+    description:
+      'An image processor in Java utilizing Swing for a GUI and use of command line arguments; the image processor allows the user to load, mutate, and save the image to the user’s computer' +
+      '\n' +
+      'NOTE: This project was made private at my professors request. If you would like to view this code or learn more about it email me :).',
+    language: [JavaLogo],
+  },
+  {
+    href: '',
     image: require('../images/marblesolitaire.png'),
     title: 'Marble Solitaire',
     description:
@@ -42,16 +52,7 @@ const cardContent = [
       'A project in which entails using OOP principles inorder to make a version of the Agar.io online game.',
     language: [JavaLogo],
   },
-  {
-    href: '',
-    image: require('../images/ImageProcessor.png'),
-    title: 'Photo Editor',
-    description:
-      'An image processor in Java utilizing Swing for a GUI and use of command line arguments; the image processor allows the user to load, mutate, and save the image to the user’s computer' +
-      '\n' +
-      'NOTE: This project was made private at my professors request. If you would like to view this code or learn more about it email me :).',
-    language: [JavaLogo],
-  },
+
   {
     href: 'https://github.com/MattCMcCoy/ChatProgram',
     image: require('../images/ChatProgram.png'),
