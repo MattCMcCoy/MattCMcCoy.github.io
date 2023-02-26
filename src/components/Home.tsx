@@ -1,6 +1,5 @@
 /// <reference path='../index.d.ts' />;
 import { TypeAnimation } from 'react-type-animation';
-import ReactPlayer from 'react-player';
 
 export default function Home() {
   const welcomeMessage = [
