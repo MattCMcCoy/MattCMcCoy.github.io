@@ -17,7 +17,7 @@ export default function Home() {
       <div className='video-background pointer-events-none'>
         <iframe
           title='droneVideo'
-          src='https://www.youtube.com/embed/mHtdM5ebXaE?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&mute=1&playlist=mHtdM5ebXaE'
+          src='https://www.youtube.com/embed/51vb3znOZrQ?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&mute=1&playlist=51vb3znOZrQ'
           frameBorder='0'
           seamless
         ></iframe>
