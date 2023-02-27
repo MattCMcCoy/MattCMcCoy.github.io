@@ -14,12 +14,12 @@ export default function Home() {
   ];
   return (
     <div className='flex min-h-screen justify-center items-center'>
-      <div className='video-background'>
+      <div className='video-background pointer-events-none'>
         <iframe
           title='droneVideo'
           src='https://www.youtube.com/embed/mHtdM5ebXaE?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&mute=1&playlist=mHtdM5ebXaE'
           frameBorder='0'
-          allowFullScreen
+          seamless
         ></iframe>
       </div>
       <div className='m-auto z-20 block absolute'>
