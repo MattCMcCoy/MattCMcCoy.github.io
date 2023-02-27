@@ -13,9 +13,9 @@ export default function About() {
   ];
 
   return (
-    <div className='md:ml-10 p-10'>
-      <div className='lg:grid-cols-[500px_auto] grid-cols-1 lg:grid-rows-1 grid'>
-        <div className='bg-slate-400 flex w-[80vw] max-w-[500px] max-h-[500px] h-[50vh] md:mt-[20vh] mt-[10vh]'>
+    <div className='md:ml-10 m-5'>
+      <div className='lg:grid-cols-[400px_auto] grid-cols-1 flex-grid lg:grid'>
+        <div className='bg-slate-400 w-[60vw] max-w-[400px] max-h-[500px] h-[50vh] md:mt-[15vh] mt-[10vh] justify-center flex'>
           <img
             src={BigRockHike}
             height={'100%'}
@@ -27,7 +27,7 @@ export default function About() {
         <div
           id='AboutMe'
           className={clsx(
-            'md:mt-[10vh] mb-10 space-y-7 text-3xl font-bold font-sans p-5',
+            'mt-[10vh] mb-10 space-y-7 text-3xl font-bold font-sans md:p-5',
             checkedState ? 'text-white' : 'text-slate-700'
           )}
         >
