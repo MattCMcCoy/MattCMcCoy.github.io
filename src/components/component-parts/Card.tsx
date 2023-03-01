@@ -16,7 +16,11 @@ interface CardProps {
   image: any;
   title: string;
   description: string;
-  language: any[];
+  language: React.FunctionComponent<
+    React.SVGProps<SVGSVGElement> & {
+      title?: string | undefined;
+    }
+  >[];
 }
 
 function ProduceCard({ href, image, title, description, language }: CardProps) {

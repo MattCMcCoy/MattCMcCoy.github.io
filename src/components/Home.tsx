@@ -1,17 +1,8 @@
-/// <reference path='../index.d.ts' />;
 import { TypeAnimation } from 'react-type-animation';
-
-export default function Home() {
-  const welcomeMessage = [
-    'Hey, My Name Is Matt! :)\n I Enjoy Photography.',
-    2000,
-    'Hey, My Name Is Matt! :)\n I Enjoy Hiking.',
-    2000,
-    'Hey, My Name Is Matt! :)\n I Enjoy Flying Drones.',
-    2000,
-    'Hey, My Name Is Matt! :)\n I Enjoy Board Games.',
-    2000,
-  ];
+interface MainHomeProps {
+  welcomeMessage: (string | number)[];
+}
+function MainHome({ welcomeMessage }: MainHomeProps) {
   return (
     <div className='flex min-h-screen justify-center items-center'>
       <div className='video-background pointer-events-none'>
@@ -34,4 +25,18 @@ export default function Home() {
       </div>
     </div>
   );
+}
+
+export default function Home() {
+  const welcomeMessage = [
+    'Hey, My Name Is Matt! :)\n I Enjoy Photography.',
+    2000,
+    'Hey, My Name Is Matt! :)\n I Enjoy Hiking.',
+    2000,
+    'Hey, My Name Is Matt! :)\n I Enjoy Flying Drones.',
+    2000,
+    'Hey, My Name Is Matt! :)\n I Enjoy Board Games.',
+    2000,
+  ];
+  return <MainHome welcomeMessage={welcomeMessage} />;
 }

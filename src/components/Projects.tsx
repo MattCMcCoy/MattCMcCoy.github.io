@@ -19,7 +19,7 @@ const cardContent = [
     image: require('../images/ImageProcessor.png'),
     title: 'Photo Editor',
     description:
-      'An image processor in Java utilizing Swing for a GUI and use of command line arguments; the image processor allows the user to load, mutate, and save the image to the user’s computer' +
+      'An image processor in Java utilizing Swing for a GUI and use of command line arguments; the image processor allows the user to load, mutate, and save the image to the users computer' +
       '\n' +
       'NOTE: This project was made private at my professors request. If you would like to view this code or learn more about it email me :).',
     language: [JavaLogo],
