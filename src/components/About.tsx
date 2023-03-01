@@ -15,14 +15,13 @@ export default function About() {
   return (
     <div className='h-[100%]'>
       <div className='md:ml-10 m-5'>
-        <div className='lg:grid-cols-[400px_auto] grid-cols-1 lg:grid'>
-          <div className='bg-slate-400 w-[60vw] max-w-[400px] max-h-[500px] h-[50vh] md:mt-[15vh] mt-[10vh] justify-center flex'>
+        <div className='lg:grid-cols-[400px_auto] lg:grid justify-center align-middle'>
+          <div className='md:w-[60vw] mx-auto md:m-0 max-w-[400px] max-h-[500px] h-[50vh] mt-20 md:mt-[15vh] justify-center md:flex'>
             <img
               src={BigRockHike}
               height={'100%'}
               width={'100%'}
               alt='hiking'
-              className='p-3'
             />
           </div>
           <div
