@@ -49,7 +49,7 @@ const cardContent = [
     image: require('../images/agario.png'),
     title: 'Agar.io Remake',
     description:
-      'A project in which entails using OOP principles inorder to make a version of the Agar.io online game.',
+      'A project which entails using OOP principles in order to make a version of the Agar.io online game.',
     language: [JavaLogo],
   },
 
