@@ -46,22 +46,30 @@ function NavigationBar({ links, navbarIcons }: NavigationBarProps) {
       <div>
         <Button
           onClick={handleClick}
-          className='border-none outline-none bg-transparent hover:text-black mt-1'
+          className='border-none outline-none bg-transparent hover:text-black'
           onMouseOver={() => switchColor}
           onMouseOut={() => switchColor}
           color={hamburgerColor}
         >
           {collapsed ? (
-            <HamburgerOpen
-              style={{ height: 20, width: 20 }}
-              className='border-none outline-none bg-transparent hover:text-black'
-              color='white'
+            <SvgIcon
+              component={HamburgerOpen}
+              inheritViewBox
+              sx={{
+                fontSize: 20,
+                color: 'white',
+                '&:hover': { color: 'black' },
+              }}
             />
           ) : (
-            <HamburgerClose
-              style={{ height: 20, width: 20 }}
-              className='border-none outline-none bg-transparent hover:text-black'
-              color='white'
+            <SvgIcon
+              component={HamburgerClose}
+              inheritViewBox
+              sx={{
+                fontSize: 20,
+                color: 'white',
+                '&:hover': { color: 'black' },
+              }}
             />
           )}
         </Button>
