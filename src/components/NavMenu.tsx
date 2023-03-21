@@ -40,27 +40,27 @@ function NavigationBar({ links, navbarIcons }: NavigationBarProps) {
   return (
     <Navbar
       className={clsx(
-        'absolute top-0 z-20 w-[100vw]',
+        'z-20 w-[100vw] flex flex-row',
         checkedState ? 'bg-slate-700' : 'bg-slate-500'
       )}
     >
       <div>
         <Button
           onClick={handleClick}
-          className='border-none outline-none bg-transparent hover:text-black lg:hidden visible'
+          className='border-none outline-none bg-transparent hover:text-black'
           onMouseOver={() => switchColor}
           onMouseOut={() => switchColor}
           color={hamburgerColor}
         >
           {collapsed ? (
             <HamburgerOpen
-              style={{ height: 30, width: 20 }}
+              style={{ height: 20, width: 20 }}
               className='border-none outline-none bg-transparent hover:text-black'
               color='white'
             />
           ) : (
             <HamburgerClose
-              style={{ height: 30, width: 20 }}
+              style={{ height: 20, width: 20 }}
               className='border-none outline-none bg-transparent hover:text-black'
               color='white'
             />
@@ -86,24 +86,7 @@ function NavigationBar({ links, navbarIcons }: NavigationBarProps) {
         ))}
         <ControlTheme />
       </div>
-      <Nav fill navbar className='space-x-2 lg:flex flex-row hidden'>
-        {links.map((link) => (
-          <NavItem key={link.href}>
-            <NavLink
-              as={Link}
-              href={link.href}
-              className={clsx(
-                'text-sm hover:underline',
-                checkedState ? 'text-white' : 'text-black'
-              )}
-              onClick={handleBlur}
-            >
-              {link.text}
-            </NavLink>
-          </NavItem>
-        ))}
-      </Nav>
-      <Collapse isOpen={collapsed} navbar className='lg:hidden block'>
+      <Collapse isOpen={collapsed} navbar className=''>
         <Nav fill navbar>
           {links.map((link) => (
             <NavItem key={link.href}>
@@ -134,7 +117,6 @@ export default function NavMenu() {
   ];
 
   const navbarIcons = [
-    { icon: Home, href: '/', target: null },
     {
       icon: GitHubLogo,
       href: 'https://github.com/MattCMcCoy',

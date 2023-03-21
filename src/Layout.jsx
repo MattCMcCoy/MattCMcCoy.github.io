@@ -6,10 +6,12 @@ export class Layout extends Component {
 
   render() {
     return (
-      <>
-        <NavMenu />
+      <div className='absolute h-[100vh]'>
+        <div className='sticky top-0 z-20'>
+          <NavMenu />
+        </div>
         {this.props.children}
-      </>
+      </div>
     );
   }
 }
