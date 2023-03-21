@@ -86,7 +86,7 @@ function NavigationBar({ links, navbarIcons }: NavigationBarProps) {
         ))}
         <ControlTheme />
       </div>
-      <Nav fill navbar className='grid-cols-4 space-x-2 lg:grid hidden mr-5'>
+      <Nav fill navbar className='space-x-2 lg:flex flex-row hidden'>
         {links.map((link) => (
           <NavItem key={link.href}>
             <NavLink
@@ -129,7 +129,6 @@ function NavigationBar({ links, navbarIcons }: NavigationBarProps) {
 export default function NavMenu() {
   const links = [
     { href: '/', text: 'Home' },
-    { href: '#/about', text: 'About Me' },
     { href: '#/projects', text: 'Projects' },
     { href: '#/resume', text: 'Resume' },
   ];
