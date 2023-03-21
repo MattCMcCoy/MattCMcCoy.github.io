@@ -2,12 +2,11 @@ import { useState } from 'react';
 import { Collapse, Nav, Navbar, NavItem, NavLink, Button } from 'reactstrap';
 import { Link } from 'react-router-dom';
 import { useCycle } from 'framer-motion';
-import { ReactComponent as HamburgerClose } from '../images/list.svg';
-import { ReactComponent as HamburgerOpen } from '../images/dash-lg.svg';
+import { ReactComponent as HamburgerClose } from '../images/hamburger-closed.svg';
+import { ReactComponent as HamburgerOpen } from '../images/hamburger-open.svg';
 import { ControlTheme, useSharedTheme } from './component-parts/PageTheme';
 import { ReactComponent as GitHubLogo } from '../images/github.svg';
 import { ReactComponent as LinkedInLogo } from '../images/linkedin.svg';
-import { ReactComponent as Home } from '../images/house.svg';
 import { SvgIcon } from '@mui/material';
 import clsx from 'clsx';
 
@@ -47,7 +46,7 @@ function NavigationBar({ links, navbarIcons }: NavigationBarProps) {
       <div>
         <Button
           onClick={handleClick}
-          className='border-none outline-none bg-transparent hover:text-black'
+          className='border-none outline-none bg-transparent hover:text-black mt-1'
           onMouseOver={() => switchColor}
           onMouseOut={() => switchColor}
           color={hamburgerColor}
