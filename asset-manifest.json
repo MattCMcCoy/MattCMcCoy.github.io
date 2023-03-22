@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.4a3a2132.css",
-    "main.js": "/static/js/main.6925f6e9.js",
+    "main.css": "/static/css/main.64b65bc6.css",
+    "main.js": "/static/js/main.0ab940da.js",
     "static/media/PortfolioWebsite.png": "/static/media/PortfolioWebsite.cfd0be5218a495b224f9.png",
     "static/media/BigRockHike.jpeg": "/static/media/BigRockHike.e928011057690377d608.jpeg",
     "static/media/ImageProcessor.png": "/static/media/ImageProcessor.390349020d6d2f7910ec.png",
@@ -22,11 +22,11 @@
     "static/media/cloud-moon-fill.svg": "/static/media/cloud-moon-fill.efc9e3d321a898b74debda27f287fb8c.svg",
     "static/media/tailwind.svg": "/static/media/tailwind.973c73e85d4daa24b257ba20298716c4.svg",
     "static/media/code-bracket.svg": "/static/media/code-bracket.c78526b6af95e526c4d9ef2220c6d775.svg",
-    "main.4a3a2132.css.map": "/static/css/main.4a3a2132.css.map",
-    "main.6925f6e9.js.map": "/static/js/main.6925f6e9.js.map"
+    "main.64b65bc6.css.map": "/static/css/main.64b65bc6.css.map",
+    "main.0ab940da.js.map": "/static/js/main.0ab940da.js.map"
   },
   "entrypoints": [
-    "static/css/main.4a3a2132.css",
-    "static/js/main.6925f6e9.js"
+    "static/css/main.64b65bc6.css",
+    "static/js/main.0ab940da.js"
   ]
 }
