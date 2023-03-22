@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import { Collapse, Nav, Navbar, NavItem, NavLink, Button } from 'reactstrap';
 import { Link } from 'react-router-dom';
-import { useCycle } from 'framer-motion';
 import { ReactComponent as HamburgerClose } from '../images/hamburger-closed.svg';
 import { ReactComponent as HamburgerOpen } from '../images/hamburger-open.svg';
 import { ControlTheme, useSharedTheme } from './component-parts/PageTheme';
@@ -24,7 +23,6 @@ interface NavigationBarProps {
 }
 function NavigationBar({ links, navbarIcons }: NavigationBarProps) {
   const [collapsed, toggleCollapse] = useState(false);
-  const [hamburgerColor, switchColor] = useCycle('black', 'white');
   const { checkedState } = useSharedTheme();
 
   const handleClick = () => {
@@ -48,7 +46,6 @@ function NavigationBar({ links, navbarIcons }: NavigationBarProps) {
         <Button
           onClick={handleClick}
           className='border-none outline-none bg-transparent group hover:text-black'
-          color={hamburgerColor}
           onBlur={handleBlur}
         >
           {collapsed ? (
