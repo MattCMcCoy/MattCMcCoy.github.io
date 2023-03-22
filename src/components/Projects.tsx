@@ -19,9 +19,7 @@ const cardContent = [
     image: require('../images/ImageProcessor.png'),
     title: 'Photo Editor',
     description:
-      'An image processor in Java utilizing Swing for a GUI and use of command line arguments; the image processor allows the user to load, mutate, and save the image to the users computer' +
-      '\n' +
-      'NOTE: This project was made private at my professors request. If you would like to view this code or learn more about it email me :).',
+      'An image processor in Java utilizing Swing for a GUI and use of command line arguments; the image processor allows the user to load, mutate, and save the image to the users computer.',
     language: [JavaLogo],
   },
   {
@@ -29,19 +27,14 @@ const cardContent = [
     image: require('../images/marblesolitaire.png'),
     title: 'Marble Solitaire',
     description:
-      'Created a Java version of a Marble Solitaire game that allows a user to play in 3 different styles of board types (English, European, and Triangular).' +
-      '\n' +
-      'NOTE: This project was made private at my professors request. If you would like to view this code or learn more about it email me :).',
+      'Created a Java version of a Marble Solitaire game that allows a user to play in 3 different styles of board types (English, European, and Triangular).',
     language: [JavaLogo],
   },
   {
     href: '',
     image: require('../images/Concentration.png'),
     title: 'Concentration',
-    description:
-      'Created a Java version of the Concentration matching game' +
-      '\n' +
-      'NOTE: This project was made private at my professors request. If you would like to view this code or learn more about it email me :).',
+    description: 'Created a Java version of the Concentration matching game.',
     language: [JavaLogo],
   },
   {
@@ -58,7 +51,7 @@ const cardContent = [
     image: require('../images/ChatProgram.png'),
     title: 'Chat Program',
     description:
-      'Built a multithreaded python chat application that allows multiple users to connect to a local machine',
+      'Built a multithreaded python chat application that allows multiple users to connect to a local machine.',
     language: [PythonLogo],
   },
 ];
