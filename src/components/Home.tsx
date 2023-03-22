@@ -13,14 +13,14 @@ function MainHome({ welcomeMessage }: MainHomeProps) {
           seamless
         ></iframe>
       </div>
-      <div className='m-auto z-20 block absolute'>
+      <div className='m-auto z-20 block absolute text-center'>
         <TypeAnimation
           sequence={welcomeMessage}
           speed={2}
           repeat={Infinity}
           wrapper='h2'
-          className='whitespace-pre-wrap font-bold'
-          style={{ fontSize: '7vw' }}
+          className='whitespace-pre-wrap font-bold font-["Gill_Sans"]'
+          style={{ fontSize: '4vw' }}
         />
       </div>
     </div>
@@ -29,13 +29,15 @@ function MainHome({ welcomeMessage }: MainHomeProps) {
 
 export default function Home() {
   const welcomeMessage = [
-    'Hey, My Name Is Matt! :)\n I Enjoy Photography.',
+    'Hey, my name is Matt!\nI Enjoy Photography.',
     2000,
-    'Hey, My Name Is Matt! :)\n I Enjoy Hiking.',
+    'Hey, my name is Matt!\nI Enjoy Hiking.',
     2000,
-    'Hey, My Name Is Matt! :)\n I Enjoy Flying Drones.',
+    'Hey, my name is Matt!\nI Enjoy Flying Drones.',
     2000,
-    'Hey, My Name Is Matt! :)\n I Enjoy Board Games.',
+    'Hey, my name is Matt!\nI Enjoy Board Games.',
+    2000,
+    'Hey, my name is Matt!\nI Enjoy Thai Food.',
     2000,
   ];
   return <MainHome welcomeMessage={welcomeMessage} />;

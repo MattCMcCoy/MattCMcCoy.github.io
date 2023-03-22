@@ -32,7 +32,8 @@ function NavigationBar({ links, navbarIcons }: NavigationBarProps) {
   };
 
   const handleBlur = (e: any) => {
-    toggleCollapse(false);
+    // not important it closes right as it blurs, ensure if link is clicked it has time to travel.
+    setTimeout(() => toggleCollapse(false), 100);
   };
 
   return (
@@ -46,9 +47,7 @@ function NavigationBar({ links, navbarIcons }: NavigationBarProps) {
       <div>
         <Button
           onClick={handleClick}
-          className='border-none outline-none bg-transparent hover:text-black'
-          onMouseOver={() => switchColor}
-          onMouseOut={() => switchColor}
+          className='border-none outline-none bg-transparent group hover:text-black'
           color={hamburgerColor}
           onBlur={handleBlur}
         >
@@ -94,15 +93,15 @@ function NavigationBar({ links, navbarIcons }: NavigationBarProps) {
         ))}
         <ControlTheme />
       </div>
-      <Collapse isOpen={collapsed} navbar className='z-10' onBlur={handleBlur}>
+      <Collapse isOpen={collapsed} navbar className='z-10'>
         <Nav fill navbar>
           {links.map((link) => (
-            <NavItem key={link.href}>
+            <NavItem key={link.href} draggable='false'>
               <NavLink
                 as={Link}
                 href={link.href}
                 className={clsx('text-sm hover:font-bold text-white')}
-                onClick={handleBlur}
+                draggable='false'
               >
                 {link.text}
               </NavLink>
