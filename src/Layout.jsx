@@ -6,10 +6,8 @@ export class Layout extends Component {
 
   render() {
     return (
-      <div className='absolute h-[100vh]'>
-        <div className='sticky top-0 z-20'>
-          <NavMenu />
-        </div>
+      <div>
+        <NavMenu />
         {this.props.children}
       </div>
     );

@@ -25,7 +25,6 @@ interface NavigationBarProps {
 function NavigationBar({ links, navbarIcons }: NavigationBarProps) {
   const [collapsed, toggleCollapse] = useState(false);
   const [hamburgerColor, switchColor] = useCycle('black', 'white');
-
   const { checkedState } = useSharedTheme();
 
   const handleClick = () => {
@@ -33,7 +32,7 @@ function NavigationBar({ links, navbarIcons }: NavigationBarProps) {
   };
 
   const handleBlur = (e: any) => {
-    if (e.target !== NavMenu) toggleCollapse(false);
+    toggleCollapse(false);
   };
 
   return (
@@ -42,6 +41,7 @@ function NavigationBar({ links, navbarIcons }: NavigationBarProps) {
         'z-20 w-[100vw] flex flex-row',
         checkedState ? 'bg-slate-700' : 'bg-slate-500'
       )}
+      fixed='top'
     >
       <div>
         <Button
@@ -50,6 +50,7 @@ function NavigationBar({ links, navbarIcons }: NavigationBarProps) {
           onMouseOver={() => switchColor}
           onMouseOut={() => switchColor}
           color={hamburgerColor}
+          onBlur={handleBlur}
         >
           {collapsed ? (
             <SvgIcon
@@ -93,17 +94,14 @@ function NavigationBar({ links, navbarIcons }: NavigationBarProps) {
         ))}
         <ControlTheme />
       </div>
-      <Collapse isOpen={collapsed} navbar className=''>
+      <Collapse isOpen={collapsed} navbar className='z-10' onBlur={handleBlur}>
         <Nav fill navbar>
           {links.map((link) => (
             <NavItem key={link.href}>
               <NavLink
                 as={Link}
                 href={link.href}
-                className={clsx(
-                  'text-sm hover:font-bold',
-                  checkedState ? 'text-white ' : 'text-black'
-                )}
+                className={clsx('text-sm hover:font-bold text-white')}
                 onClick={handleBlur}
               >
                 {link.text}
