@@ -18,11 +18,12 @@ interface CardProps {
   image: any;
   title: string;
   description: string;
-  language: React.FunctionComponent<
-    React.SVGProps<SVGSVGElement> & {
-      title?: string | undefined;
-    }
-  >[];
+  language: {
+    logo: React.FunctionComponent<
+      React.SVGProps<SVGSVGElement> & { title?: string | undefined }
+    >;
+    name: string;
+  }[];
 }
 
 function ProduceCard({ href, image, title, description, language }: CardProps) {
@@ -61,14 +62,16 @@ function ProduceCard({ href, image, title, description, language }: CardProps) {
         >
           {language.map((l) => {
             return (
-              <SvgIcon
-                component={l}
-                inheritViewBox
-                sx={{
-                  fontSize: 40,
-                  color: 'white',
-                }}
-              />
+              <Tooltip title={l.name}>
+                <SvgIcon
+                  component={l.logo}
+                  inheritViewBox
+                  sx={{
+                    fontSize: 40,
+                    color: 'white',
+                  }}
+                />
+              </Tooltip>
             );
           })}
           {href ? (

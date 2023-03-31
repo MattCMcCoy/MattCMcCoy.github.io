@@ -13,7 +13,11 @@ const cardContent = [
     title: 'Portfolio Website',
     description:
       'This website that I have been developing in my free time to learn React. A main goal of this website was keeping a responsive design so that it works on mobile.',
-    language: [TypeScriptLogo, ReactLogo, TailWindLogo],
+    language: [
+      { logo: TypeScriptLogo, name: 'TypeScript' },
+      { logo: ReactLogo, name: 'React' },
+      { logo: TailWindLogo, name: 'Tailwind' },
+    ],
   },
   {
     href: '',
@@ -21,7 +25,7 @@ const cardContent = [
     title: 'Photo Editor',
     description:
       'An image processor in Java utilizing Swing for a GUI and use of command line arguments; the image processor allows the user to load, mutate, and save the image to the users computer.',
-    language: [JavaLogo],
+    language: [{ logo: JavaLogo, name: 'Java' }],
   },
   {
     href: '',
@@ -29,14 +33,14 @@ const cardContent = [
     title: 'Marble Solitaire',
     description:
       'Created a Java version of a Marble Solitaire game that allows a user to play in 3 different styles of board types (English, European, and Triangular).',
-    language: [JavaLogo],
+    language: [{ logo: JavaLogo, name: 'Java' }],
   },
   {
     href: '',
     image: require('../images/Concentration.png'),
     title: 'Concentration',
     description: 'Created a Java version of the Concentration matching game.',
-    language: [JavaLogo],
+    language: [{ logo: JavaLogo, name: 'Java' }],
   },
   {
     href: 'https://github.com/MattCMcCoy/AgarIOGame',
@@ -44,7 +48,7 @@ const cardContent = [
     title: 'Agar.io Remake',
     description:
       'A project which entails using OOP principles in order to make a version of the Agar.io online game.',
-    language: [JavaLogo],
+    language: [{ logo: JavaLogo, name: 'Java' }],
   },
 
   {
@@ -53,7 +57,7 @@ const cardContent = [
     title: 'Chat Program',
     description:
       'Built a multithreaded python chat application that allows multiple users to connect to a local machine.',
-    language: [PythonLogo],
+    language: [{ logo: PythonLogo, name: 'Python' }],
   },
 ];
 
