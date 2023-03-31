@@ -4,6 +4,7 @@ import { ReactComponent as TypeScriptLogo } from '../images/typescript.svg';
 import { ReactComponent as JavaLogo } from '../images/java.svg';
 import { ReactComponent as PythonLogo } from '../images/python.svg';
 import { ReactComponent as TailWindLogo } from '../images/tailwind.svg';
+import { ReactComponent as ReactLogo } from '../images/react.svg';
 
 const cardContent = [
   {
@@ -12,7 +13,7 @@ const cardContent = [
     title: 'Portfolio Website',
     description:
       'This website that I have been developing in my free time to learn React. A main goal of this website was keeping a responsive design so that it works on mobile.',
-    language: [TypeScriptLogo, TailWindLogo],
+    language: [TypeScriptLogo, ReactLogo, TailWindLogo],
   },
   {
     href: '',
