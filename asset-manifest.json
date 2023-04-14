@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.64b65bc6.css",
-    "main.js": "/static/js/main.7b3ec026.js",
+    "main.js": "/static/js/main.646b04f6.js",
     "static/media/PortfolioWebsite.png": "/static/media/PortfolioWebsite.cfd0be5218a495b224f9.png",
     "static/media/BigRockHike.jpeg": "/static/media/BigRockHike.e928011057690377d608.jpeg",
     "static/media/ImageProcessor.png": "/static/media/ImageProcessor.390349020d6d2f7910ec.png",
@@ -10,6 +10,7 @@
     "static/media/ChatProgram.png": "/static/media/ChatProgram.af7c23e2395e13cf8e5e.png",
     "static/media/Concentration.png": "/static/media/Concentration.bd4224bf2cafe41184db.png",
     "static/media/marblesolitaire.png": "/static/media/marblesolitaire.330055f48c96e8777080.png",
+    "static/media/CoveyTownCheckers.png": "/static/media/CoveyTownCheckers.c3298a51824226b74a7c.png",
     "static/media/hamburger-closed.svg": "/static/media/hamburger-closed.8d3dece7737f43c2d8cc2b45517407d3.svg",
     "static/media/java.svg": "/static/media/java.2f67b0b8cec7651f1cea54ad6e76a990.svg",
     "static/media/hamburger-open.svg": "/static/media/hamburger-open.0679266a48f62a6a8d172cfda6316ac7.svg",
@@ -24,10 +25,10 @@
     "static/media/tailwind.svg": "/static/media/tailwind.6c7678df5b73eeac2db9e983fc8e90b2.svg",
     "static/media/code-bracket.svg": "/static/media/code-bracket.c78526b6af95e526c4d9ef2220c6d775.svg",
     "main.64b65bc6.css.map": "/static/css/main.64b65bc6.css.map",
-    "main.7b3ec026.js.map": "/static/js/main.7b3ec026.js.map"
+    "main.646b04f6.js.map": "/static/js/main.646b04f6.js.map"
   },
   "entrypoints": [
     "static/css/main.64b65bc6.css",
-    "static/js/main.7b3ec026.js"
+    "static/js/main.646b04f6.js"
   ]
 }
