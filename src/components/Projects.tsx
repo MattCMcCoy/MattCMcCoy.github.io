@@ -22,7 +22,7 @@ const cardContent = [
   {
     href: '',
     image: require('../images/CoveyTownCheckers.png'),
-    title: 'Covey Town: Checker Area',
+    title: 'Checker Area',
     description:
       'Covey Town is an Open Source Software distributed during my Software Engineering Course. My team developed an additional area in which two members could play a game of checkers together. The game communicates back and forth from the backend and the frontend to update both users frontend models through the API we developed.',
     language: [
