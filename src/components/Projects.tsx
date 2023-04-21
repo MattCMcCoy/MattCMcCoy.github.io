@@ -20,7 +20,7 @@ const cardContent = [
     ],
   },
   {
-    href: '',
+    href: 'https://github.com/MattCMcCoy/CoveyTown/commits?author=MattCMcCoy',
     image: require('../images/CoveyTownCheckers.png'),
     title: 'Checker Area',
     description:
