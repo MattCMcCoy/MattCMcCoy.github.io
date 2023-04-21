@@ -1,4 +1,5 @@
 import { useSharedTheme } from './PageTheme';
+import React from 'react';
 import {
   Typography,
   CardMedia,
@@ -13,7 +14,7 @@ import { ReactComponent as lock } from '../../images/lock-icon.svg';
 
 import { ReactComponent as CodeBracket } from '../../images/code-bracket.svg';
 
-interface CardProps {
+export interface CardProps {
   href: string;
   image: any;
   title: string;
@@ -28,7 +29,6 @@ interface CardProps {
 
 function ProduceCard({ href, image, title, description, language }: CardProps) {
   const { checkedState } = useSharedTheme();
-
   return (
     <>
       <Card className='mr-[2vw] ml-[2vw] mb-[2vh] mt-[2vh]'>
@@ -63,7 +63,10 @@ function ProduceCard({ href, image, title, description, language }: CardProps) {
         >
           {language.map((l) => {
             return (
-              <Tooltip title={<Typography fontSize={10}>{l.name}</Typography>}>
+              <Tooltip
+                key={l.name}
+                title={<Typography fontSize={10}>{l.name}</Typography>}
+              >
                 <SvgIcon
                   component={l.logo}
                   inheritViewBox
