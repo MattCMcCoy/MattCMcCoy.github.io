@@ -43,11 +43,12 @@ function ProduceCard({ href, image, title, description, language }: CardProps) {
             checkedState ? 'bg-slate-400' : 'bg-sky-200'
           )}
         >
-          <Typography component='div' fontWeight='bold'>
+          <Typography component='div' fontWeight='bold' fontSize={20}>
             {title}
           </Typography>
           <Typography
             component='div'
+            fontSize={13}
             variant='caption'
             className='border-none md:block hidden'
           >
