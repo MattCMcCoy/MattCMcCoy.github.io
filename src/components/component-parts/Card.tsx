@@ -63,7 +63,7 @@ function ProduceCard({ href, image, title, description, language }: CardProps) {
         >
           {language.map((l) => {
             return (
-              <Tooltip title={l.name}>
+              <Tooltip title={<Typography fontSize={10}>{l.name}</Typography>}>
                 <SvgIcon
                   component={l.logo}
                   inheritViewBox
@@ -81,7 +81,13 @@ function ProduceCard({ href, image, title, description, language }: CardProps) {
               className='sticky bg-transparent border-0 group md:grid md:grid-cols-2 w-11 ml-auto h-9'
               target='_blank'
             >
-              <Tooltip title='View the code of this project in GitHub.'>
+              <Tooltip
+                title={
+                  <Typography fontSize={10}>
+                    View the code of this project in GitHub.
+                  </Typography>
+                }
+              >
                 <SvgIcon
                   component={CodeBracket}
                   sx={{
@@ -93,7 +99,14 @@ function ProduceCard({ href, image, title, description, language }: CardProps) {
               </Tooltip>
             </Button>
           ) : (
-            <Tooltip title='This project was made private at my professors request, if you would like to view this code or learn more about it email me. :)'>
+            <Tooltip
+              title={
+                <Typography fontSize={10}>
+                  This project was made private at my professors request, if you
+                  would like to view this code or learn more about it email me.
+                </Typography>
+              }
+            >
               <SvgIcon
                 component={lock}
                 inheritViewBox
