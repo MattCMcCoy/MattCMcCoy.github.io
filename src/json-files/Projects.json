@@ -3,7 +3,7 @@
     "href": "https://github.com/MattCMcCoy/MattCMcCoy.github.io",
     "image": "PortfolioWebsite.png",
     "title": "Portfolio Website",
-    "description": "This website that I have been developing in my free time to learn React. A main goal of this website was keeping a responsive design so that it works on mobile.",
+    "description": "This website that I have been updating in my free time, initially to learn TypeScript and React.\n Some goals of the site are: maintaining a responsive design and thinking about the best way to design components for extension.",
     "language": [
       { "name": "TypeScript" },
       { "name": "React" },
