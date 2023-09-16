@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.64b65bc6.css",
-    "main.js": "/static/js/main.be69d03b.js",
+    "main.css": "/static/css/main.ad8bfc61.css",
+    "main.js": "/static/js/main.fa1a3a37.js",
     "static/media/PortfolioWebsite.png": "/static/media/PortfolioWebsite.cfd0be5218a495b224f9.png",
     "static/media/BigRockHike.jpeg": "/static/media/BigRockHike.e928011057690377d608.jpeg",
     "static/media/ImageProcessor.png": "/static/media/ImageProcessor.390349020d6d2f7910ec.png",
@@ -11,9 +11,9 @@
     "static/media/Concentration.png": "/static/media/Concentration.bd4224bf2cafe41184db.png",
     "static/media/marblesolitaire.png": "/static/media/marblesolitaire.330055f48c96e8777080.png",
     "static/media/CoveyTownCheckers.png": "/static/media/CoveyTownCheckers.c3298a51824226b74a7c.png",
-    "static/media/hamburger-closed.svg": "/static/media/hamburger-closed.8d3dece7737f43c2d8cc2b45517407d3.svg",
+    "static/media/hamburger-closed.svg": "/static/media/hamburger-closed.b1e5daab44a6bcb7fb6268d3b501fb3e.svg",
     "static/media/java.svg": "/static/media/java.2f67b0b8cec7651f1cea54ad6e76a990.svg",
-    "static/media/hamburger-open.svg": "/static/media/hamburger-open.0679266a48f62a6a8d172cfda6316ac7.svg",
+    "static/media/hamburger-open.svg": "/static/media/hamburger-open.83173969bf16122ec05797c0b7f16650.svg",
     "static/media/react.svg": "/static/media/react.6c1d44b8c59f0f72ff199a54ceed774c.svg",
     "static/media/lock-icon.svg": "/static/media/lock-icon.d4752f54d3e01ca5528e103d5e73e44b.svg",
     "static/media/typescript.svg": "/static/media/typescript.a9eb93732ee55860275508a23e89e346.svg",
@@ -29,11 +29,11 @@
     "static/media/list.svg": "/static/media/list.f98b98b4905b36b844a6.svg",
     "static/media/code-bracket.svg": "/static/media/code-bracket.c78526b6af95e526c4d9ef2220c6d775.svg",
     "static/media/dash-lg.svg": "/static/media/dash-lg.05e15557607e2536efbf.svg",
-    "main.64b65bc6.css.map": "/static/css/main.64b65bc6.css.map",
-    "main.be69d03b.js.map": "/static/js/main.be69d03b.js.map"
+    "main.ad8bfc61.css.map": "/static/css/main.ad8bfc61.css.map",
+    "main.fa1a3a37.js.map": "/static/js/main.fa1a3a37.js.map"
   },
   "entrypoints": [
-    "static/css/main.64b65bc6.css",
-    "static/js/main.be69d03b.js"
+    "static/css/main.ad8bfc61.css",
+    "static/js/main.fa1a3a37.js"
   ]
 }
